@@ -1,0 +1,56 @@
+= Demos belonging to the Ansible Hands-on Webinar
+
+== Scenario
+
+=== Single server installatiom 
+Setup a Webserver
+- install Apache
+- copy the index page
+    - using a template and jinja2
+- start the apache service
+- configure the firewall
+
+=== Multiple webservers with a load balancer
+Setup a HAProxy load balancer
+- install HAproxy
+- copy template HAproxy config
+    - use the webservers group in the inventory file to populate the endpoints
+- start the HAproxy service
+- configure the firewall
+
+Reconfigure the webservers
+- change the background color of index.html to show the effect of the loadbalancer
+    - myservera -> blue
+    - myserverb -> yellow
+
+== Demo Environment
+- Ansible Tower installed on local laptop
+- myservera, myserverb, myserverc as VM on local laptop
+- github public repo
+- local account _devops_ created on all servers
+- /etc/hosts configured with aliasses for the scenarios
+    - mywebservera
+    - mywebserverb
+    - mylbserverc
+
+----
+- name: Add the user 'devops' with a specific uid and a primary group of 'admin'
+  user:
+    name: devops
+    comment: DevOps account
+    uid: 1040
+    group: admin
+
+- name: Create a 2048-bit SSH key for user devops in ~devops/.ssh/id_rsa
+  user:
+    name: devops
+    generate_ssh_key: yes
+    ssh_key_bits: 2048
+    ssh_key_file: .ssh/id_rsa
+----
+
+File - /etc/sudoers.d/devops
+----
+# user devops does not need to authenticate again when using SUDO
+devops        ALL=(ALL)       NOPASSWD: ALL
+----

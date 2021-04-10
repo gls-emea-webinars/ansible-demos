@@ -1,0 +1,27 @@
+== Demo 1 Using Ad-Hoc commands
+
+.Show our prep work
+----
+First we need to show that we made sure we can access the managed nodes using ssh without using a password. For this we need to have SSH-keys distributed. Also we need to have the managed nodes listed. We list our (static) managed nodes in an inventory file called 'myservers' in the folder 'inventory/'. 
+In our ansible.cfg we describe which credentials we use and where to find the inventory files.
+----
+
+.Show all available hosts in the inventory
+----
+ansible all --list-hosts
+----
+
+.Install some software
+----
+ansible myservera.lenny.local -m yum -a "name=httpd state=present" --user devops
+----
+
+.Show installed software using the command module
+----
+ansible myservera.lenny.local -a "yum list httpd" --user devops
+----
+
+.Remove some software
+----
+ansible myservera.lenny.local -m yum -a "name=httpd state=absent" --user devops
+----

@@ -1,0 +1,596 @@
+2021-04-09 16:06:39,549 p=803280 u=rmegens n=ansible |  [ERROR]: User interrupted execution
+
+2021-04-09 16:08:45,232 p=803610 u=rmegens n=ansible | myservera.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:08:45,260 p=803610 u=rmegens n=ansible | myserverc.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:08:45,262 p=803610 u=rmegens n=ansible | myserverb.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:08:55,071 p=803717 u=rmegens n=ansible | ansible 2.10.4
+  config file = /home/rmegens/github.com/Ansible-Demos/demo1-adhoc/ansible.cfg
+  configured module search path = ['/home/rmegens/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible
+  python version = 3.6.8 (default, Aug 18 2020, 08:33:21) [GCC 8.3.1 20191121 (Red Hat 8.3.1-5)]
+2021-04-09 16:08:55,071 p=803717 u=rmegens n=ansible | Using /home/rmegens/github.com/Ansible-Demos/demo1-adhoc/ansible.cfg as config file
+2021-04-09 16:09:02,664 p=803717 u=rmegens n=ansible | redirecting (type: callback) ansible.builtin.timer to ansible.posix.timer
+2021-04-09 16:09:02,666 p=803717 u=rmegens n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2021-04-09 16:09:02,667 p=803717 u=rmegens n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-04-09 16:09:02,667 p=803717 u=rmegens n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-04-09 16:09:02,711 p=803717 u=rmegens n=ansible | META: ran handlers
+2021-04-09 16:09:04,584 p=803717 u=rmegens n=ansible | myservera.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:09:04,607 p=803717 u=rmegens n=ansible | myserverc.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:09:06,251 p=803717 u=rmegens n=ansible | myserverb.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Invalid/incorrect password: Permission denied, please try again.",
+    "unreachable": true
+}
+2021-04-09 16:09:42,795 p=803894 u=rmegens n=ansible | ansible 2.10.4
+  config file = /home/rmegens/github.com/Ansible-Demos/demo1-adhoc/ansible.cfg
+  configured module search path = ['/home/rmegens/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible
+  python version = 3.6.8 (default, Aug 18 2020, 08:33:21) [GCC 8.3.1 20191121 (Red Hat 8.3.1-5)]
+2021-04-09 16:09:42,795 p=803894 u=rmegens n=ansible | Using /home/rmegens/github.com/Ansible-Demos/demo1-adhoc/ansible.cfg as config file
+2021-04-09 16:09:47,405 p=803894 u=rmegens n=ansible | redirecting (type: callback) ansible.builtin.timer to ansible.posix.timer
+2021-04-09 16:09:47,409 p=803894 u=rmegens n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2021-04-09 16:09:47,409 p=803894 u=rmegens n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2021-04-09 16:09:47,409 p=803894 u=rmegens n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2021-04-09 16:09:47,453 p=803894 u=rmegens n=ansible | META: ran handlers
+2021-04-09 16:09:48,634 p=803894 u=rmegens n=ansible | myserverc.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:09:48,642 p=803894 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:09:48,642 p=803894 u=rmegens n=ansible | myserverb.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:09:48,646 p=803894 u=rmegens n=ansible | META: ran handlers
+2021-04-09 16:09:48,649 p=803894 u=rmegens n=ansible | META: ran handlers
+2021-04-09 16:14:18,992 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from amazon.aws in a release after 2022-06-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:18,992 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from amazon.aws in a release after 2021-12-01. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:18,995 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from ansible.netcommon in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,001 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from arista.eos in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,004 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from awx.awx in a release after TBD. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,025 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.asa in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,027 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.ios in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,030 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.iosxr in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,036 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,039 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-10-26. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,041 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from cisco.nxos in a release after 2022-10-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:14:19,046 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.aws in a release after 2021-12-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,060 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.azure in a release after TBD. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,074 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: The 'community.crypto.acme_account_facts' module has 
+been renamed to 'community.crypto.acme_account_info'. This feature will be 
+removed from community.crypto in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,075 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: The 'community.crypto.openssl_certificate' module has 
+been renamed to 'community.crypto.x509_certificate'. This feature will be 
+removed from community.crypto in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,075 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: The 'community.crypto.openssl_certificate_info' module 
+has been renamed to 'community.crypto.x509_certificate_info'. This feature will
+ be removed from community.crypto in version 2.0.0. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,077 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.digitalocean in version 2.0.0. Deprecation warnings 
+can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,082 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.general in version 3.0.0. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,086 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.general in version 2.0.0. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,091 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: The helm module in community.general has been 
+deprecated. Use community.kubernetes.helm instead. This feature will be removed
+ from community.general in version 3.0.0. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,141 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.network in version 2.0.0. Deprecation warnings can be
+ disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,152 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.vmware in a release after 2022-06-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,153 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from community.vmware in a release after 2021-12-01. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,216 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: see plugin documentation for details. This feature will 
+be removed from hetzner.hcloud in version 2.0.0. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,220 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from junipernetworks.junos in a release after 
+2022-06-01. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,245 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.auth. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,246 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.config. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,246 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.coe_cluster. This feature will be removed from openstack.cloud 
+in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,246 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.coe_cluster_template. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,247 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.compute_flavor_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,247 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.floating_ip. This feature will be removed from openstack.cloud 
+in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,248 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_group. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,248 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_group_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,249 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.image. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,249 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.image_info. This feature will be removed from openstack.cloud 
+in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,250 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.baremetal_node. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,250 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.baremetal_inspect. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,251 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.baremetal_node_action. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,251 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.keypair. This feature will be removed from openstack.cloud in a
+ release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,252 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_domain. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,252 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_domain_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,253 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.endpoint. This feature will be removed from openstack.cloud in 
+a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,253 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.keystone_federation_protocol. This feature will be removed from
+ openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,253 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.keystone_federation_protocol_info. This feature will be removed
+ from openstack.cloud in a release after 2021-12-12. Deprecation warnings can 
+be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,254 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.federation_idp. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,254 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.federation_idp_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,255 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.federation_mapping. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,255 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.federation_mapping_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,256 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_role. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,256 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.catalog_service. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,257 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_listener. This feature will be removed from openstack.cloud 
+in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,257 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.loadbalancer. This feature will be removed from openstack.cloud
+ in a release after 2021-12-12. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,257 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_member. This feature will be removed from openstack.cloud in
+ a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,258 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.network. This feature will be removed from openstack.cloud in a
+ release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,258 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.networks_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,259 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.compute_flavor. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,259 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.host_aggregate. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,259 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.object. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,260 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.lb_pool. This feature will be removed from openstack.cloud in a
+ release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,260 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.port. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,261 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.port_info. This feature will be removed from openstack.cloud in
+ a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,261 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.project. This feature will be removed from openstack.cloud in a
+ release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,262 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.project_access. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,262 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.project_info. This feature will be removed from openstack.cloud
+ in a release after 2021-12-12. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,262 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.quota. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,263 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.recordset. This feature will be removed from openstack.cloud in
+ a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,263 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.router. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,264 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.routers_info. This feature will be removed from openstack.cloud
+ in a release after 2021-12-12. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,264 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.security_group. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,264 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.security_group_rule. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,265 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,265 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server_action. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,266 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server_group. This feature will be removed from openstack.cloud
+ in a release after 2021-12-12. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,266 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server_info. This feature will be removed from openstack.cloud 
+in a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,266 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server_metadata. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,267 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.server_volume. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,267 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.stack. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,268 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.subnet. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,268 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.subnets_info. This feature will be removed from openstack.cloud
+ in a release after 2021-12-12. Deprecation warnings can be disabled by setting
+ deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,268 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_user. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,269 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.group_assignment. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,269 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.identity_user_info. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,270 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.role_assignment. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,270 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.volume. This feature will be removed from openstack.cloud in a 
+release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,270 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.volume_snapshot. This feature will be removed from 
+openstack.cloud in a release after 2021-12-12. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,271 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: os_ prefixed module names are deprecated, use 
+openstack.cloud.dns_zone. This feature will be removed from openstack.cloud in 
+a release after 2021-12-12. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2021-04-09 16:14:19,285 p=804973 u=rmegens n=ansible | [DEPRECATION WARNING]: See the plugin documentation for more details. This 
+feature will be removed from vyos.vyos in a release after 2022-06-01. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-04-09 16:19:26,459 p=806584 u=rmegens n=ansible | myserverc.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:19:26,461 p=806584 u=rmegens n=ansible | myservera.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:19:26,474 p=806584 u=rmegens n=ansible | myserverb.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:20:08,659 p=806786 u=rmegens n=ansible | myserverb.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:20:08,660 p=806786 u=rmegens n=ansible | myserverc.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:20:08,691 p=806786 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:21:37,462 p=807392 u=rmegens n=ansible | myserverc.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:21:37,468 p=807392 u=rmegens n=ansible | myservera.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:21:37,476 p=807392 u=rmegens n=ansible | myserverb.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:22:32,104 p=807654 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:22:32,147 p=807654 u=rmegens n=ansible | myserverc.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:22:32,155 p=807654 u=rmegens n=ansible | myserverb.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:22:37,986 p=807741 u=rmegens n=ansible | myserverb.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:22:38,805 p=807741 u=rmegens n=ansible | myservera.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:22:38,850 p=807741 u=rmegens n=ansible | myserverc.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:24:24,687 p=808072 u=rmegens n=ansible | myserverb.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:24:24,689 p=808072 u=rmegens n=ansible | myserverc.lenny.local | FAILED! => {
+    "msg": "Missing sudo password"
+}
+2021-04-09 16:24:24,843 p=808072 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:30:45,049 p=809106 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:30:45,051 p=809106 u=rmegens n=ansible | myserverb.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-09 16:30:45,051 p=809106 u=rmegens n=ansible | myserverc.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-10 20:41:05,305 p=816294 u=rmegens n=ansible |   hosts (3):
+2021-04-10 20:41:05,305 p=816294 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-10 20:41:05,305 p=816294 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-10 20:41:05,305 p=816294 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-10 20:41:41,513 p=816378 u=rmegens n=ansible | myservera.lenny.local | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: rmegens@myservera.lenny.local: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2021-04-10 20:41:59,343 p=816468 u=rmegens n=ansible | myservera.lenny.local | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2021-04-10 20:43:19,861 p=816684 u=rmegens n=ansible | myservera.lenny.local | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": false,
+    "msg": "Failed to download metadata for repo 'rhel-8-for-x86_64-appstream-rpms': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried",
+    "rc": 1,
+    "results": []
+}
+2021-04-10 20:45:05,582 p=817063 u=rmegens n=ansible | myservera.lenny.local | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "msg": "",
+    "rc": 0,
+    "results": [
+        "Installed: redhat-logos-httpd-81.1-1.el8.noarch",
+        "Installed: httpd-tools-2.4.37-30.module+el8.3.0+7001+0766b9e7.x86_64",
+        "Installed: apr-1.6.3-11.el8.x86_64",
+        "Installed: apr-util-bdb-1.6.1-6.el8.x86_64",
+        "Installed: apr-util-1.6.1-6.el8.x86_64",
+        "Installed: apr-util-openssl-1.6.1-6.el8.x86_64",
+        "Installed: httpd-2.4.37-30.module+el8.3.0+7001+0766b9e7.x86_64",
+        "Installed: httpd-filesystem-2.4.37-30.module+el8.3.0+7001+0766b9e7.noarch",
+        "Installed: mod_http2-1.15.7-2.module+el8.3.0+7670+8bf57d29.x86_64"
+    ]
+}
+2021-04-10 20:49:52,757 p=817944 u=rmegens n=ansible |   hosts (3):
+2021-04-10 20:49:52,757 p=817944 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-10 20:49:52,757 p=817944 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-10 20:49:52,757 p=817944 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-10 20:51:39,176 p=818261 u=rmegens n=ansible |   hosts (6):
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myservera
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myserverb
+2021-04-10 20:51:39,177 p=818261 u=rmegens n=ansible |     myserverc
+2021-04-10 20:51:47,921 p=818303 u=rmegens n=ansible |   hosts (1):
+2021-04-10 20:51:47,921 p=818303 u=rmegens n=ansible |     myserverc
+2021-04-10 20:51:57,116 p=818356 u=rmegens n=ansible |   hosts (2):
+2021-04-10 20:51:57,116 p=818356 u=rmegens n=ansible |     myservera
+2021-04-10 20:51:57,116 p=818356 u=rmegens n=ansible |     myserverb
+2021-04-10 20:57:16,478 p=819077 u=rmegens n=ansible | [WARNING]: Consider using the yum module rather than running 'yum'.  If you need to use command because yum is insufficient you can add
+'warn: false' to this command task or set 'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2021-04-10 20:57:16,478 p=819077 u=rmegens n=ansible | myservera | CHANGED | rc=0 >>
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:12:18 ago on Sat 10 Apr 2021 08:44:56 PM CEST.
+Installed Packages
+httpd.x86_64 2.4.37-30.module+el8.3.0+7001+0766b9e7 @rhel-8-for-x86_64-appstream-rpms
+
+2021-04-10 22:27:33,417 p=828615 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-10 22:42:12,124 p=831439 u=rmegens n=ansible | [WARNING]: module firewall not found in:
+/home/rmegens/.ansible/plugins/modules:/usr/share/ansible/plugins/modules:/usr/local/lib/python3.6/site-packages/ansible/modules
+
+2021-04-10 22:42:17,354 p=831479 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-10 23:02:59,966 p=835127 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.

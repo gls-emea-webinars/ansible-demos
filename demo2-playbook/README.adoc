@@ -1,0 +1,26 @@
+== Demo 2 Using an Ansible Playbook
+
+
+.Show all available hosts in the inventory
+----
+ansible all --list-hosts
+----
+
+.Install some software
+----
+
+
+
+
+----
+
+.Show installed software using the command module
+----
+ansible myservera.lenny.local -a "yum list httpd" --user devops
+----
+
+.Remove some software
+----
+
+
+----

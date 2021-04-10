@@ -1,0 +1,26 @@
+---
+- name: Remove webserver software
+  hosts: webservers
+
+  vars:
+    pkgname: httpd
+    pkgservice: httpd
+    pkgport: http
+    indexloc: /var/www/html
+
+  tasks:
+    - name: Remove Apache webserver software
+      yum:
+        name: "{{ pkgname }}"
+        state: absent
+
+    # - name: Remove DocumentRoot folder
+    #   file:
+    #     path: "{{ indexloc }}"
+    #     state: absent
+
+    - name: Reset firewall
+      firewalld:
+        service: "{{ pkgport }}"
+        state: disabled
+        immediate: true
