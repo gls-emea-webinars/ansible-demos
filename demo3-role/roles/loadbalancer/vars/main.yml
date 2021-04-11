@@ -1,0 +1,7 @@
+---
+# vars file for loadbalancer
+pkgname: haproxy
+pkgservice: haproxy
+pkgfirewall: http
+pkgconfig: haproxy.cfg
+pkgconfigloc: /etc/haproxy/

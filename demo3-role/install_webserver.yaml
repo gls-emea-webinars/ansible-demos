@@ -1,0 +1,6 @@
+---
+- name: Install the Webservers with a Role
+  hosts: webservers
+
+  roles:
+    - webserver

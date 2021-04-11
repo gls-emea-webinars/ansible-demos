@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ webpage_name }}</title>
+    <style>
+        .headbar {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+        }
+        .footer {
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        a {
+            color: #19C7D4;
+        }
+    </style>
+</head>
+{% if ansible_nodename == 'myservera.lenny.local' %}
+<body bgcolor="#D41C04">
+{% else %}
+<body bgcolor="#D40F85">
+{% endif %}
+    <div class=headbar>
+        <h1>Red Hat Ansible Automation Platform Technical DEMO</h1>
+        <hr>
+    </div>
+    <div align="center" >
+        <table border="None">
+            <tr>
+                <td><h3>Hostname</h3></td>
+                <td><h3>{{ ansible_nodename }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>IP Address</h3></td>
+                <td><h3>{{ ansible_default_ipv4.address }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>Memory</h3></td>
+                <td><h3>{{ ansible_memtotal_mb }}</h3></td>
+            </tr>
+            <tr>
+                <td><h3>Uptime</h3></td>
+                <td><h3>{{ ansible_uptime_seconds }}</h3></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="footer">
+        <hr>
+        <h2>Source code can be found on : <a href="http://github.com/gls-emea-webinars/ansible-demos">github.com/gls-emea-webinars/ansible-demos</a></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,656 @@
+2021-04-11 19:11:37,219 p=955944 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:11:37,229 p=955944 u=rmegens n=ansible | PLAY [Install the Webservers with a Role] ***********************************************************************************************
+2021-04-11 19:11:37,241 p=955944 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:11:37,241 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:37 +0200 (0:00:00.015)       0:00:00.015 ********** 
+2021-04-11 19:11:37,241 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:37 +0200 (0:00:00.014)       0:00:00.014 ********** 
+2021-04-11 19:11:39,394 p=955944 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:11:39,403 p=955944 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:11:39,422 p=955944 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:11:39,422 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:39 +0200 (0:00:02.181)       0:00:02.196 ********** 
+2021-04-11 19:11:39,422 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:39 +0200 (0:00:02.181)       0:00:02.196 ********** 
+2021-04-11 19:11:48,765 p=955944 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:11:48,823 p=955944 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:11:48,832 p=955944 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:11:48,832 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:48 +0200 (0:00:09.409)       0:00:11.606 ********** 
+2021-04-11 19:11:48,832 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:48 +0200 (0:00:09.409)       0:00:11.605 ********** 
+2021-04-11 19:11:49,590 p=955944 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:11:49,628 p=955944 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:11:49,642 p=955944 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:11:49,642 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:49 +0200 (0:00:00.810)       0:00:12.416 ********** 
+2021-04-11 19:11:49,642 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:49 +0200 (0:00:00.810)       0:00:12.415 ********** 
+2021-04-11 19:11:50,894 p=955944 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:11:50,905 p=955944 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:11:50,914 p=955944 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:11:50,914 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:50 +0200 (0:00:01.271)       0:00:13.688 ********** 
+2021-04-11 19:11:50,914 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:50 +0200 (0:00:01.271)       0:00:13.687 ********** 
+2021-04-11 19:11:52,509 p=955944 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:11:52,559 p=955944 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:11:52,578 p=955944 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:11:52,578 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:52 +0200 (0:00:01.664)       0:00:15.352 ********** 
+2021-04-11 19:11:52,579 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:52 +0200 (0:00:01.664)       0:00:15.352 ********** 
+2021-04-11 19:11:54,231 p=955944 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:11:54,248 p=955944 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:11:54,264 p=955944 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:11:54,264 p=955944 u=rmegens n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:11:54,264 p=955944 u=rmegens n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 17 seconds
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:54 +0200 (0:00:01.686)       0:00:17.038 ********** 
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | webserver -------------------------------------------------------------- 14.84s
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 2.18s
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | total ------------------------------------------------------------------ 17.02s
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | Sunday 11 April 2021  19:11:54 +0200 (0:00:01.686)       0:00:17.038 ********** 
+2021-04-11 19:11:54,265 p=955944 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 9.41s
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.18s
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 1.69s
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 1.66s
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 1.27s
+2021-04-11 19:11:54,266 p=955944 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.81s
+2021-04-11 19:12:00,603 p=956167 u=rmegens n=ansible | PLAY [Install the Loadbalancer with a Role] *********************************************************************************************
+2021-04-11 19:12:00,644 p=956167 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:12:00,644 p=956167 u=rmegens n=ansible | Sunday 11 April 2021  19:12:00 +0200 (0:00:00.043)       0:00:00.043 ********** 
+2021-04-11 19:12:00,644 p=956167 u=rmegens n=ansible | Sunday 11 April 2021  19:12:00 +0200 (0:00:00.043)       0:00:00.043 ********** 
+2021-04-11 19:12:02,751 p=956167 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:12:02,777 p=956167 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:12:02,777 p=956167 u=rmegens n=ansible | myserverc                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | Sunday 11 April 2021  19:12:02 +0200 (0:00:02.133)       0:00:02.177 ********** 
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 2.13s
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | total ------------------------------------------------------------------- 2.13s
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | Sunday 11 April 2021  19:12:02 +0200 (0:00:02.133)       0:00:02.177 ********** 
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:12:02,778 p=956167 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.13s
+2021-04-11 19:15:30,266 p=956804 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:15:30,276 p=956804 u=rmegens n=ansible | PLAY [Install the Loadbalancer with a Role] *********************************************************************************************
+2021-04-11 19:15:30,286 p=956804 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:15:30,287 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:30 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:15:30,287 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:30 +0200 (0:00:00.012)       0:00:00.012 ********** 
+2021-04-11 19:15:32,349 p=956804 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:15:32,368 p=956804 u=rmegens n=ansible | TASK [Install HAProxy from loadbalancer] ************************************************************************************************
+2021-04-11 19:15:32,368 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:32 +0200 (0:00:02.081)       0:00:02.095 ********** 
+2021-04-11 19:15:32,369 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:32 +0200 (0:00:02.081)       0:00:02.094 ********** 
+2021-04-11 19:15:40,651 p=956804 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:15:40,659 p=956804 u=rmegens n=ansible | TASK [loadbalancer : Configure HAProxy] *************************************************************************************************
+2021-04-11 19:15:40,659 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:40 +0200 (0:00:08.290)       0:00:10.385 ********** 
+2021-04-11 19:15:40,659 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:40 +0200 (0:00:08.290)       0:00:10.385 ********** 
+2021-04-11 19:15:41,937 p=956804 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:15:41,945 p=956804 u=rmegens n=ansible | TASK [loadbalancer : Enable and Start HAProxy service] **********************************************************************************
+2021-04-11 19:15:41,945 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:41 +0200 (0:00:01.285)       0:00:11.671 ********** 
+2021-04-11 19:15:41,945 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:41 +0200 (0:00:01.285)       0:00:11.671 ********** 
+2021-04-11 19:15:43,491 p=956804 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:15:43,500 p=956804 u=rmegens n=ansible | TASK [loadbalancer : Configure firewall] ************************************************************************************************
+2021-04-11 19:15:43,500 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:43 +0200 (0:00:01.555)       0:00:13.226 ********** 
+2021-04-11 19:15:43,500 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:43 +0200 (0:00:01.555)       0:00:13.226 ********** 
+2021-04-11 19:15:44,358 p=956804 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | myserverc                  : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 14 seconds
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:44 +0200 (0:00:00.872)       0:00:14.098 ********** 
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | loadbalancer ----------------------------------------------------------- 12.00s
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 2.08s
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:15:44,372 p=956804 u=rmegens n=ansible | total ------------------------------------------------------------------ 14.09s
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | Sunday 11 April 2021  19:15:44 +0200 (0:00:00.872)       0:00:14.098 ********** 
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | Install HAProxy from loadbalancer ------------------------------------------------------------------------------------------------ 8.29s
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.08s
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | loadbalancer : Enable and Start HAProxy service ---------------------------------------------------------------------------------- 1.56s
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | loadbalancer : Configure HAProxy ------------------------------------------------------------------------------------------------- 1.29s
+2021-04-11 19:15:44,373 p=956804 u=rmegens n=ansible | loadbalancer : Configure firewall ------------------------------------------------------------------------------------------------ 0.87s
+2021-04-11 19:18:11,994 p=957834 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:18:12,009 p=957834 u=rmegens n=ansible | PLAY [Install the Webservers with a Role] ***********************************************************************************************
+2021-04-11 19:18:12,019 p=957834 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:18:12,019 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:12 +0200 (0:00:00.012)       0:00:00.012 ********** 
+2021-04-11 19:18:12,019 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:12 +0200 (0:00:00.012)       0:00:00.012 ********** 
+2021-04-11 19:18:13,329 p=957834 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:18:13,359 p=957834 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:18:13,379 p=957834 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:18:13,379 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:13 +0200 (0:00:01.359)       0:00:01.372 ********** 
+2021-04-11 19:18:13,379 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:13 +0200 (0:00:01.359)       0:00:01.372 ********** 
+2021-04-11 19:18:21,876 p=957834 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:18:21,909 p=957834 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:18:21,917 p=957834 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:18:21,918 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:21 +0200 (0:00:08.538)       0:00:09.911 ********** 
+2021-04-11 19:18:21,918 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:21 +0200 (0:00:08.538)       0:00:09.911 ********** 
+2021-04-11 19:18:22,751 p=957834 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:18:22,765 p=957834 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:18:22,774 p=957834 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:18:22,774 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:22 +0200 (0:00:00.856)       0:00:10.768 ********** 
+2021-04-11 19:18:22,775 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:22 +0200 (0:00:00.856)       0:00:10.768 ********** 
+2021-04-11 19:18:24,069 p=957834 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:18:24,072 p=957834 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:18:24,079 p=957834 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:18:24,080 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:24 +0200 (0:00:01.305)       0:00:12.073 ********** 
+2021-04-11 19:18:24,080 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:24 +0200 (0:00:01.305)       0:00:12.073 ********** 
+2021-04-11 19:18:25,773 p=957834 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:18:25,832 p=957834 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:18:25,845 p=957834 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:18:25,846 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:25 +0200 (0:00:01.766)       0:00:13.839 ********** 
+2021-04-11 19:18:25,846 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:25 +0200 (0:00:01.766)       0:00:13.839 ********** 
+2021-04-11 19:18:26,765 p=957834 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:18:26,768 p=957834 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:18:26,784 p=957834 u=rmegens n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: loadbalancer
+
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | PLAY [Install the loadbalacner with a Role] *********************************************************************************************
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | skipping: no hosts matched
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 14 seconds
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:26 +0200 (0:00:00.939)       0:00:14.779 ********** 
+2021-04-11 19:18:26,785 p=957834 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver -------------------------------------------------------------- 13.41s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 1.36s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | total ------------------------------------------------------------------ 14.77s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | Sunday 11 April 2021  19:18:26 +0200 (0:00:00.940)       0:00:14.779 ********** 
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 8.54s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 1.77s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.36s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 1.31s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 0.94s
+2021-04-11 19:18:26,786 p=957834 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.86s
+2021-04-11 19:19:23,086 p=958184 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:19:23,100 p=958184 u=rmegens n=ansible | PLAY [Install the Webservers with a Role] ***********************************************************************************************
+2021-04-11 19:19:23,110 p=958184 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:19:23,111 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:23 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:19:23,111 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:23 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:19:24,403 p=958184 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:19:24,411 p=958184 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:19:24,431 p=958184 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:19:24,431 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:24 +0200 (0:00:01.320)       0:00:01.334 ********** 
+2021-04-11 19:19:24,431 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:24 +0200 (0:00:01.320)       0:00:01.333 ********** 
+2021-04-11 19:19:29,936 p=958184 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:19:29,943 p=958184 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:19:29,951 p=958184 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:19:29,951 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:29 +0200 (0:00:05.519)       0:00:06.853 ********** 
+2021-04-11 19:19:29,951 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:29 +0200 (0:00:05.519)       0:00:06.853 ********** 
+2021-04-11 19:19:30,624 p=958184 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:19:30,627 p=958184 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:19:30,635 p=958184 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:19:30,635 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:30 +0200 (0:00:00.684)       0:00:07.537 ********** 
+2021-04-11 19:19:30,635 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:30 +0200 (0:00:00.684)       0:00:07.537 ********** 
+2021-04-11 19:19:31,910 p=958184 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:19:31,914 p=958184 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:19:31,922 p=958184 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:19:31,923 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:31 +0200 (0:00:01.287)       0:00:08.825 ********** 
+2021-04-11 19:19:31,923 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:31 +0200 (0:00:01.287)       0:00:08.824 ********** 
+2021-04-11 19:19:32,840 p=958184 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:19:32,847 p=958184 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:19:32,856 p=958184 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:19:32,856 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:32 +0200 (0:00:00.933)       0:00:09.758 ********** 
+2021-04-11 19:19:32,856 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:32 +0200 (0:00:00.933)       0:00:09.758 ********** 
+2021-04-11 19:19:33,684 p=958184 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:19:33,689 p=958184 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:19:33,706 p=958184 u=rmegens n=ansible | PLAY [Install the loadbalacner with a Role] *********************************************************************************************
+2021-04-11 19:19:33,711 p=958184 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:19:33,711 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:33 +0200 (0:00:00.854)       0:00:10.613 ********** 
+2021-04-11 19:19:33,711 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:33 +0200 (0:00:00.854)       0:00:10.613 ********** 
+2021-04-11 19:19:35,541 p=958184 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:19:35,560 p=958184 u=rmegens n=ansible | TASK [Install HAProxy from loadbalancer] ************************************************************************************************
+2021-04-11 19:19:35,560 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:35 +0200 (0:00:01.848)       0:00:12.462 ********** 
+2021-04-11 19:19:35,560 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:35 +0200 (0:00:01.848)       0:00:12.462 ********** 
+2021-04-11 19:19:43,807 p=958184 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:19:43,815 p=958184 u=rmegens n=ansible | TASK [loadbalancer : Configure HAProxy] *************************************************************************************************
+2021-04-11 19:19:43,815 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:43 +0200 (0:00:08.255)       0:00:20.717 ********** 
+2021-04-11 19:19:43,815 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:43 +0200 (0:00:08.255)       0:00:20.717 ********** 
+2021-04-11 19:19:44,893 p=958184 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:19:44,900 p=958184 u=rmegens n=ansible | TASK [loadbalancer : Enable and Start HAProxy service] **********************************************************************************
+2021-04-11 19:19:44,900 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:44 +0200 (0:00:01.085)       0:00:21.803 ********** 
+2021-04-11 19:19:44,900 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:44 +0200 (0:00:01.085)       0:00:21.802 ********** 
+2021-04-11 19:19:46,185 p=958184 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:19:46,200 p=958184 u=rmegens n=ansible | TASK [loadbalancer : Configure firewall] ************************************************************************************************
+2021-04-11 19:19:46,200 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:46 +0200 (0:00:01.300)       0:00:23.103 ********** 
+2021-04-11 19:19:46,201 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:46 +0200 (0:00:01.300)       0:00:23.102 ********** 
+2021-04-11 19:19:47,010 p=958184 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:19:47,025 p=958184 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:19:47,025 p=958184 u=rmegens n=ansible | myservera                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:19:47,025 p=958184 u=rmegens n=ansible | myserverb                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:19:47,025 p=958184 u=rmegens n=ansible | myserverc                  : ok=5    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 23 seconds
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:47 +0200 (0:00:00.825)       0:00:23.928 ********** 
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | loadbalancer ----------------------------------------------------------- 11.47s
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | webserver --------------------------------------------------------------- 9.28s
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 3.17s
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:19:47,026 p=958184 u=rmegens n=ansible | total ------------------------------------------------------------------ 23.92s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | Sunday 11 April 2021  19:19:47 +0200 (0:00:00.825)       0:00:23.928 ********** 
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | Install HAProxy from loadbalancer ------------------------------------------------------------------------------------------------ 8.26s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 5.52s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.85s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.32s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | loadbalancer : Enable and Start HAProxy service ---------------------------------------------------------------------------------- 1.30s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 1.29s
+2021-04-11 19:19:47,027 p=958184 u=rmegens n=ansible | loadbalancer : Configure HAProxy ------------------------------------------------------------------------------------------------- 1.09s
+2021-04-11 19:19:47,028 p=958184 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 0.93s
+2021-04-11 19:19:47,028 p=958184 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 0.85s
+2021-04-11 19:19:47,028 p=958184 u=rmegens n=ansible | loadbalancer : Configure firewall ------------------------------------------------------------------------------------------------ 0.83s
+2021-04-11 19:19:47,028 p=958184 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.68s
+2021-04-11 19:26:02,371 p=959296 u=rmegens n=ansible | [WARNING]: While constructing a mapping from /home/rmegens/github.com/Ansible-Demos/demo3-role/roles/webserver/tasks/main.yml, line 3,
+column 1, found a duplicate dict key (block). Using last defined value only.
+
+2021-04-11 19:26:02,371 p=959296 u=rmegens n=ansible | [WARNING]: While constructing a mapping from /home/rmegens/github.com/Ansible-Demos/demo3-role/roles/webserver/tasks/main.yml, line 3,
+column 1, found a duplicate dict key (when). Using last defined value only.
+
+2021-04-11 19:26:02,372 p=959296 u=rmegens n=ansible | ERROR! The tasks/main.yml file for role 'webserver' must contain a list of tasks
+
+The error appears to be in '/home/rmegens/github.com/Ansible-Demos/demo3-role/roles/webserver/tasks/main.yml': line 3, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# tasks file for webserver
+block:
+^ here
+
+2021-04-11 19:27:25,610 p=959492 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:27:25,621 p=959492 u=rmegens n=ansible | PLAY [Remove the Webservers with a Role] ************************************************************************************************
+2021-04-11 19:27:25,632 p=959492 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:27:25,632 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:25 +0200 (0:00:00.014)       0:00:00.014 ********** 
+2021-04-11 19:27:25,632 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:25 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:27:27,911 p=959492 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:27:28,016 p=959492 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:27:28,036 p=959492 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:27:28,036 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:02.404)       0:00:02.418 ********** 
+2021-04-11 19:27:28,037 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:02.404)       0:00:02.418 ********** 
+2021-04-11 19:27:28,059 p=959492 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:27:28,072 p=959492 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:27:28,081 p=959492 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:27:28,081 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.045)       0:00:02.463 ********** 
+2021-04-11 19:27:28,082 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.045)       0:00:02.463 ********** 
+2021-04-11 19:27:28,105 p=959492 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:27:28,115 p=959492 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:27:28,123 p=959492 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:27:28,123 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.041)       0:00:02.505 ********** 
+2021-04-11 19:27:28,123 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.041)       0:00:02.505 ********** 
+2021-04-11 19:27:28,149 p=959492 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:27:28,159 p=959492 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:27:28,167 p=959492 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:27:28,167 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.044)       0:00:02.549 ********** 
+2021-04-11 19:27:28,167 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.044)       0:00:02.549 ********** 
+2021-04-11 19:27:28,190 p=959492 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:27:28,202 p=959492 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:27:28,210 p=959492 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:27:28,210 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.042)       0:00:02.592 ********** 
+2021-04-11 19:27:28,210 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.042)       0:00:02.591 ********** 
+2021-04-11 19:27:28,240 p=959492 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:27:28,251 p=959492 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:27:28,259 p=959492 u=rmegens n=ansible | TASK [Remove Apache webserver software] *************************************************************************************************
+2021-04-11 19:27:28,259 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.049)       0:00:02.641 ********** 
+2021-04-11 19:27:28,259 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:28 +0200 (0:00:00.049)       0:00:02.640 ********** 
+2021-04-11 19:27:37,980 p=959492 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:27:37,983 p=959492 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:27:37,996 p=959492 u=rmegens n=ansible | TASK [webserver : Reset firewall] *******************************************************************************************************
+2021-04-11 19:27:37,997 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:37 +0200 (0:00:09.737)       0:00:12.379 ********** 
+2021-04-11 19:27:37,997 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:37 +0200 (0:00:09.737)       0:00:12.378 ********** 
+2021-04-11 19:27:38,945 p=959492 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:27:38,953 p=959492 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:27:38,969 p=959492 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:27:38,969 p=959492 u=rmegens n=ansible | myservera                  : ok=3    changed=2    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | myserverb                  : ok=3    changed=2    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 13 seconds
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:38 +0200 (0:00:00.973)       0:00:13.352 ********** 
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | webserver -------------------------------------------------------------- 10.93s
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 2.40s
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | total ------------------------------------------------------------------ 13.34s
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | Sunday 11 April 2021  19:27:38 +0200 (0:00:00.973)       0:00:13.352 ********** 
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | Remove Apache webserver software ------------------------------------------------------------------------------------------------- 9.74s
+2021-04-11 19:27:38,970 p=959492 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.40s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Reset firewall ------------------------------------------------------------------------------------------------------- 0.97s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 0.05s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 0.05s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 0.04s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:27:38,971 p=959492 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.04s
+2021-04-11 19:30:00,511 p=960038 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:30:00,516 p=960038 u=rmegens n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/rmegens/github.com/Ansible-Demos/demo3-role/roles/loadbalancer/tasks/main.yml': line 29, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      immediate: true
+when: modus == 'install'
+^ here
+
+2021-04-11 19:32:28,027 p=960296 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:32:28,045 p=960296 u=rmegens n=ansible | PLAY [Remove the Webservers with a Role] ************************************************************************************************
+2021-04-11 19:32:28,054 p=960296 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:32:28,055 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:28 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:32:28,055 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:28 +0200 (0:00:00.012)       0:00:00.012 ********** 
+2021-04-11 19:32:30,288 p=960296 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:32:30,296 p=960296 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:32:30,318 p=960296 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:32:30,318 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:02.263)       0:00:02.276 ********** 
+2021-04-11 19:32:30,318 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:02.263)       0:00:02.276 ********** 
+2021-04-11 19:32:30,344 p=960296 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:32:30,354 p=960296 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:32:30,363 p=960296 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:32:30,363 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.045)       0:00:02.321 ********** 
+2021-04-11 19:32:30,363 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.045)       0:00:02.321 ********** 
+2021-04-11 19:32:30,386 p=960296 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:32:30,397 p=960296 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:32:30,405 p=960296 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:32:30,405 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.041)       0:00:02.363 ********** 
+2021-04-11 19:32:30,405 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.041)       0:00:02.363 ********** 
+2021-04-11 19:32:30,429 p=960296 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:32:30,440 p=960296 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:32:30,448 p=960296 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:32:30,448 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.043)       0:00:02.406 ********** 
+2021-04-11 19:32:30,448 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.043)       0:00:02.406 ********** 
+2021-04-11 19:32:30,472 p=960296 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:32:30,482 p=960296 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:32:30,490 p=960296 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:32:30,490 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.041)       0:00:02.448 ********** 
+2021-04-11 19:32:30,490 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.041)       0:00:02.448 ********** 
+2021-04-11 19:32:30,515 p=960296 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:32:30,523 p=960296 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:32:30,530 p=960296 u=rmegens n=ansible | TASK [Remove Apache webserver software] *************************************************************************************************
+2021-04-11 19:32:30,531 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.040)       0:00:02.489 ********** 
+2021-04-11 19:32:30,531 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:30 +0200 (0:00:00.040)       0:00:02.488 ********** 
+2021-04-11 19:32:35,869 p=960296 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:32:35,886 p=960296 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:32:35,894 p=960296 u=rmegens n=ansible | TASK [webserver : Reset firewall] *******************************************************************************************************
+2021-04-11 19:32:35,894 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:35 +0200 (0:00:05.363)       0:00:07.853 ********** 
+2021-04-11 19:32:35,895 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:35 +0200 (0:00:05.363)       0:00:07.852 ********** 
+2021-04-11 19:32:36,905 p=960296 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:32:36,970 p=960296 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:32:36,998 p=960296 u=rmegens n=ansible | PLAY [Remove the loadbalacner with a Role] **********************************************************************************************
+2021-04-11 19:32:37,003 p=960296 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:32:37,003 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:37 +0200 (0:00:01.108)       0:00:08.961 ********** 
+2021-04-11 19:32:37,003 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:37 +0200 (0:00:01.108)       0:00:08.961 ********** 
+2021-04-11 19:32:38,901 p=960296 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:32:38,919 p=960296 u=rmegens n=ansible | TASK [Install HAProxy from loadbalancer] ************************************************************************************************
+2021-04-11 19:32:38,919 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:01.915)       0:00:10.877 ********** 
+2021-04-11 19:32:38,919 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:01.915)       0:00:10.877 ********** 
+2021-04-11 19:32:38,942 p=960296 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:32:38,949 p=960296 u=rmegens n=ansible | TASK [loadbalancer : Configure HAProxy] *************************************************************************************************
+2021-04-11 19:32:38,949 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:00.030)       0:00:10.908 ********** 
+2021-04-11 19:32:38,950 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:00.030)       0:00:10.907 ********** 
+2021-04-11 19:32:38,972 p=960296 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:32:38,980 p=960296 u=rmegens n=ansible | TASK [loadbalancer : Enable and Start HAProxy service] **********************************************************************************
+2021-04-11 19:32:38,980 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:00.030)       0:00:10.938 ********** 
+2021-04-11 19:32:38,980 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:38 +0200 (0:00:00.030)       0:00:10.938 ********** 
+2021-04-11 19:32:39,003 p=960296 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:32:39,016 p=960296 u=rmegens n=ansible | TASK [loadbalancer : Configure firewall] ************************************************************************************************
+2021-04-11 19:32:39,016 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.036)       0:00:10.975 ********** 
+2021-04-11 19:32:39,017 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.036)       0:00:10.974 ********** 
+2021-04-11 19:32:39,042 p=960296 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:32:39,050 p=960296 u=rmegens n=ansible | TASK [loadbalancer : Stop HAProxy service] **********************************************************************************************
+2021-04-11 19:32:39,050 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.033)       0:00:11.008 ********** 
+2021-04-11 19:32:39,050 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.033)       0:00:11.008 ********** 
+2021-04-11 19:32:39,910 p=960296 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:32:39,918 p=960296 u=rmegens n=ansible | TASK [loadbalancer : Reset firewall] ****************************************************************************************************
+2021-04-11 19:32:39,919 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.868)       0:00:11.877 ********** 
+2021-04-11 19:32:39,919 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:39 +0200 (0:00:00.868)       0:00:11.876 ********** 
+2021-04-11 19:32:40,638 p=960296 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:32:40,645 p=960296 u=rmegens n=ansible | TASK [De-install HAProxy from loadbalancer] *********************************************************************************************
+2021-04-11 19:32:40,646 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:40 +0200 (0:00:00.727)       0:00:12.604 ********** 
+2021-04-11 19:32:40,646 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:40 +0200 (0:00:00.727)       0:00:12.603 ********** 
+2021-04-11 19:32:49,648 p=960296 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:32:49,663 p=960296 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:32:49,663 p=960296 u=rmegens n=ansible | myservera                  : ok=3    changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | myserverb                  : ok=3    changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | myserverc                  : ok=4    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 21 seconds
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:49 +0200 (0:00:09.018)       0:00:21.622 ********** 
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | loadbalancer ----------------------------------------------------------- 10.74s
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | webserver --------------------------------------------------------------- 6.69s
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 4.18s
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | total ------------------------------------------------------------------ 21.61s
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | Sunday 11 April 2021  19:32:49 +0200 (0:00:09.018)       0:00:21.622 ********** 
+2021-04-11 19:32:49,664 p=960296 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | De-install HAProxy from loadbalancer --------------------------------------------------------------------------------------------- 9.02s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | Remove Apache webserver software ------------------------------------------------------------------------------------------------- 5.36s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.26s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.92s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Reset firewall ------------------------------------------------------------------------------------------------------- 1.11s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | loadbalancer : Stop HAProxy service ---------------------------------------------------------------------------------------------- 0.87s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | loadbalancer : Reset firewall ---------------------------------------------------------------------------------------------------- 0.73s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 0.05s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 0.04s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.04s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | loadbalancer : Enable and Start HAProxy service ---------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | loadbalancer : Configure firewall ------------------------------------------------------------------------------------------------ 0.03s
+2021-04-11 19:32:49,665 p=960296 u=rmegens n=ansible | Install HAProxy from loadbalancer ------------------------------------------------------------------------------------------------ 0.03s
+2021-04-11 19:32:49,666 p=960296 u=rmegens n=ansible | loadbalancer : Configure HAProxy ------------------------------------------------------------------------------------------------- 0.03s
+2021-04-11 19:34:43,607 p=960863 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:34:43,625 p=960863 u=rmegens n=ansible | PLAY [Install the Webservers with a Role] ***********************************************************************************************
+2021-04-11 19:34:43,634 p=960863 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:34:43,634 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:43 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:34:43,634 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:43 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:34:45,766 p=960863 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:34:45,807 p=960863 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:34:45,827 p=960863 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:34:45,827 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:45 +0200 (0:00:02.192)       0:00:02.206 ********** 
+2021-04-11 19:34:45,827 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:45 +0200 (0:00:02.192)       0:00:02.205 ********** 
+2021-04-11 19:34:54,712 p=960863 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:34:54,824 p=960863 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:34:54,837 p=960863 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:34:54,838 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:54 +0200 (0:00:09.010)       0:00:11.217 ********** 
+2021-04-11 19:34:54,838 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:54 +0200 (0:00:09.011)       0:00:11.216 ********** 
+2021-04-11 19:34:55,585 p=960863 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:34:55,600 p=960863 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:34:55,611 p=960863 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:34:55,611 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:55 +0200 (0:00:00.772)       0:00:11.990 ********** 
+2021-04-11 19:34:55,611 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:55 +0200 (0:00:00.772)       0:00:11.989 ********** 
+2021-04-11 19:34:56,899 p=960863 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:34:56,900 p=960863 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:34:56,907 p=960863 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:34:56,908 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:56 +0200 (0:00:01.296)       0:00:13.286 ********** 
+2021-04-11 19:34:56,908 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:56 +0200 (0:00:01.296)       0:00:13.286 ********** 
+2021-04-11 19:34:58,452 p=960863 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:34:58,490 p=960863 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:34:58,503 p=960863 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:34:58,503 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:58 +0200 (0:00:01.595)       0:00:14.882 ********** 
+2021-04-11 19:34:58,503 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:34:58 +0200 (0:00:01.595)       0:00:14.881 ********** 
+2021-04-11 19:34:59,493 p=960863 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:35:00,152 p=960863 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:35:00,160 p=960863 u=rmegens n=ansible | TASK [Remove Apache webserver software] *************************************************************************************************
+2021-04-11 19:35:00,160 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:01.656)       0:00:16.539 ********** 
+2021-04-11 19:35:00,160 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:01.656)       0:00:16.538 ********** 
+2021-04-11 19:35:00,187 p=960863 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:35:00,196 p=960863 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:35:00,204 p=960863 u=rmegens n=ansible | TASK [webserver : Reset firewall] *******************************************************************************************************
+2021-04-11 19:35:00,205 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:00.044)       0:00:16.583 ********** 
+2021-04-11 19:35:00,205 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:00.044)       0:00:16.583 ********** 
+2021-04-11 19:35:00,230 p=960863 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:35:00,239 p=960863 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:35:00,255 p=960863 u=rmegens n=ansible | PLAY [Install the loadbalacner with a Role] *********************************************************************************************
+2021-04-11 19:35:00,260 p=960863 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:35:00,260 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:00.055)       0:00:16.639 ********** 
+2021-04-11 19:35:00,260 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:00 +0200 (0:00:00.055)       0:00:16.639 ********** 
+2021-04-11 19:35:02,099 p=960863 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:35:02,117 p=960863 u=rmegens n=ansible | TASK [Install HAProxy from loadbalancer] ************************************************************************************************
+2021-04-11 19:35:02,117 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:02 +0200 (0:00:01.856)       0:00:18.496 ********** 
+2021-04-11 19:35:02,117 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:02 +0200 (0:00:01.856)       0:00:18.496 ********** 
+2021-04-11 19:35:10,084 p=960863 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:35:10,091 p=960863 u=rmegens n=ansible | TASK [loadbalancer : Configure HAProxy] *************************************************************************************************
+2021-04-11 19:35:10,091 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:10 +0200 (0:00:07.973)       0:00:26.470 ********** 
+2021-04-11 19:35:10,091 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:10 +0200 (0:00:07.973)       0:00:26.470 ********** 
+2021-04-11 19:35:11,127 p=960863 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:35:11,135 p=960863 u=rmegens n=ansible | TASK [loadbalancer : Enable and Start HAProxy service] **********************************************************************************
+2021-04-11 19:35:11,136 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:11 +0200 (0:00:01.044)       0:00:27.514 ********** 
+2021-04-11 19:35:11,136 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:11 +0200 (0:00:01.044)       0:00:27.514 ********** 
+2021-04-11 19:35:12,504 p=960863 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:35:12,514 p=960863 u=rmegens n=ansible | TASK [loadbalancer : Configure firewall] ************************************************************************************************
+2021-04-11 19:35:12,515 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:12 +0200 (0:00:01.378)       0:00:28.893 ********** 
+2021-04-11 19:35:12,515 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:12 +0200 (0:00:01.378)       0:00:28.893 ********** 
+2021-04-11 19:35:13,346 p=960863 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:35:13,353 p=960863 u=rmegens n=ansible | TASK [loadbalancer : Stop HAProxy service] **********************************************************************************************
+2021-04-11 19:35:13,353 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.838)       0:00:29.732 ********** 
+2021-04-11 19:35:13,353 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.838)       0:00:29.732 ********** 
+2021-04-11 19:35:13,376 p=960863 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:35:13,384 p=960863 u=rmegens n=ansible | TASK [loadbalancer : Reset firewall] ****************************************************************************************************
+2021-04-11 19:35:13,384 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.030)       0:00:29.763 ********** 
+2021-04-11 19:35:13,384 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.030)       0:00:29.762 ********** 
+2021-04-11 19:35:13,408 p=960863 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:35:13,416 p=960863 u=rmegens n=ansible | TASK [De-install HAProxy from loadbalancer] *********************************************************************************************
+2021-04-11 19:35:13,416 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.032)       0:00:29.795 ********** 
+2021-04-11 19:35:13,416 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.032)       0:00:29.795 ********** 
+2021-04-11 19:35:13,440 p=960863 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | myserverc                  : ok=5    changed=4    unreachable=0    failed=0    skipped=3    rescued=0    ignored=0   
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 29 seconds
+2021-04-11 19:35:13,455 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.039)       0:00:29.834 ********** 
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | webserver -------------------------------------------------------------- 14.43s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | loadbalancer ----------------------------------------------------------- 11.34s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 4.05s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | total ------------------------------------------------------------------ 29.82s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | Sunday 11 April 2021  19:35:13 +0200 (0:00:00.039)       0:00:29.834 ********** 
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 9.01s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | Install HAProxy from loadbalancer ------------------------------------------------------------------------------------------------ 7.97s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.19s
+2021-04-11 19:35:13,456 p=960863 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.86s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 1.66s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 1.60s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | loadbalancer : Enable and Start HAProxy service ---------------------------------------------------------------------------------- 1.38s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 1.30s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | loadbalancer : Configure HAProxy ------------------------------------------------------------------------------------------------- 1.04s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | loadbalancer : Configure firewall ------------------------------------------------------------------------------------------------ 0.84s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.77s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | webserver : Reset firewall ------------------------------------------------------------------------------------------------------- 0.06s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | Remove Apache webserver software ------------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | De-install HAProxy from loadbalancer --------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | loadbalancer : Reset firewall ---------------------------------------------------------------------------------------------------- 0.03s
+2021-04-11 19:35:13,457 p=960863 u=rmegens n=ansible | loadbalancer : Stop HAProxy service ---------------------------------------------------------------------------------------------- 0.03s
+2021-04-11 19:36:22,206 p=961401 u=rmegens n=ansible | ERROR! the playbook: remove_webserver.yaml could not be found
+2021-04-11 19:36:28,690 p=961435 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
+community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-11 19:36:28,708 p=961435 u=rmegens n=ansible | PLAY [Remove the Webservers with a Role] ************************************************************************************************
+2021-04-11 19:36:28,718 p=961435 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:36:28,718 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:28 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:36:28,718 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:28 +0200 (0:00:00.013)       0:00:00.013 ********** 
+2021-04-11 19:36:30,851 p=961435 u=rmegens n=ansible | ok: [myserverb]
+2021-04-11 19:36:30,858 p=961435 u=rmegens n=ansible | ok: [myservera]
+2021-04-11 19:36:30,877 p=961435 u=rmegens n=ansible | TASK [webserver : Install Apache2] ******************************************************************************************************
+2021-04-11 19:36:30,877 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:02.159)       0:00:02.172 ********** 
+2021-04-11 19:36:30,877 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:02.159)       0:00:02.172 ********** 
+2021-04-11 19:36:30,901 p=961435 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:36:30,910 p=961435 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:36:30,918 p=961435 u=rmegens n=ansible | TASK [webserver : Create document root folder if not exist] *****************************************************************************
+2021-04-11 19:36:30,919 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:00.041)       0:00:02.214 ********** 
+2021-04-11 19:36:30,919 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:00.041)       0:00:02.214 ********** 
+2021-04-11 19:36:30,946 p=961435 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:36:30,954 p=961435 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:36:30,963 p=961435 u=rmegens n=ansible | TASK [webserver : Copy index page] ******************************************************************************************************
+2021-04-11 19:36:30,963 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:00.044)       0:00:02.258 ********** 
+2021-04-11 19:36:30,963 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:30 +0200 (0:00:00.044)       0:00:02.258 ********** 
+2021-04-11 19:36:30,989 p=961435 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:36:30,997 p=961435 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:36:31,007 p=961435 u=rmegens n=ansible | TASK [webserver : Enable and Start Service] *********************************************************************************************
+2021-04-11 19:36:31,008 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.044)       0:00:02.303 ********** 
+2021-04-11 19:36:31,008 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.044)       0:00:02.302 ********** 
+2021-04-11 19:36:31,031 p=961435 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:36:31,042 p=961435 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:36:31,051 p=961435 u=rmegens n=ansible | TASK [webserver : Configure firewall] ***************************************************************************************************
+2021-04-11 19:36:31,051 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.043)       0:00:02.346 ********** 
+2021-04-11 19:36:31,051 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.043)       0:00:02.346 ********** 
+2021-04-11 19:36:31,074 p=961435 u=rmegens n=ansible | skipping: [myservera]
+2021-04-11 19:36:31,086 p=961435 u=rmegens n=ansible | skipping: [myserverb]
+2021-04-11 19:36:31,094 p=961435 u=rmegens n=ansible | TASK [Remove Apache webserver software] *************************************************************************************************
+2021-04-11 19:36:31,094 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.042)       0:00:02.389 ********** 
+2021-04-11 19:36:31,094 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:31 +0200 (0:00:00.042)       0:00:02.389 ********** 
+2021-04-11 19:36:39,717 p=961435 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:36:40,338 p=961435 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:36:40,346 p=961435 u=rmegens n=ansible | TASK [webserver : Reset firewall] *******************************************************************************************************
+2021-04-11 19:36:40,346 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:40 +0200 (0:00:09.252)       0:00:11.641 ********** 
+2021-04-11 19:36:40,346 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:40 +0200 (0:00:09.252)       0:00:11.641 ********** 
+2021-04-11 19:36:41,336 p=961435 u=rmegens n=ansible | changed: [myserverb]
+2021-04-11 19:36:41,385 p=961435 u=rmegens n=ansible | changed: [myservera]
+2021-04-11 19:36:41,404 p=961435 u=rmegens n=ansible | PLAY [Remove the loadbalacner with a Role] **********************************************************************************************
+2021-04-11 19:36:41,409 p=961435 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************************************************************
+2021-04-11 19:36:41,409 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:41 +0200 (0:00:01.062)       0:00:12.704 ********** 
+2021-04-11 19:36:41,409 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:41 +0200 (0:00:01.063)       0:00:12.704 ********** 
+2021-04-11 19:36:43,177 p=961435 u=rmegens n=ansible | ok: [myserverc]
+2021-04-11 19:36:43,195 p=961435 u=rmegens n=ansible | TASK [Install HAProxy from loadbalancer] ************************************************************************************************
+2021-04-11 19:36:43,195 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:01.786)       0:00:14.491 ********** 
+2021-04-11 19:36:43,196 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:01.786)       0:00:14.490 ********** 
+2021-04-11 19:36:43,220 p=961435 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:36:43,227 p=961435 u=rmegens n=ansible | TASK [loadbalancer : Configure HAProxy] *************************************************************************************************
+2021-04-11 19:36:43,227 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.032)       0:00:14.523 ********** 
+2021-04-11 19:36:43,228 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.032)       0:00:14.522 ********** 
+2021-04-11 19:36:43,250 p=961435 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:36:43,258 p=961435 u=rmegens n=ansible | TASK [loadbalancer : Enable and Start HAProxy service] **********************************************************************************
+2021-04-11 19:36:43,258 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.030)       0:00:14.554 ********** 
+2021-04-11 19:36:43,259 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.030)       0:00:14.553 ********** 
+2021-04-11 19:36:43,281 p=961435 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:36:43,289 p=961435 u=rmegens n=ansible | TASK [loadbalancer : Configure firewall] ************************************************************************************************
+2021-04-11 19:36:43,289 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.030)       0:00:14.585 ********** 
+2021-04-11 19:36:43,289 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.030)       0:00:14.584 ********** 
+2021-04-11 19:36:43,312 p=961435 u=rmegens n=ansible | skipping: [myserverc]
+2021-04-11 19:36:43,320 p=961435 u=rmegens n=ansible | TASK [loadbalancer : Stop HAProxy service] **********************************************************************************************
+2021-04-11 19:36:43,321 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.031)       0:00:14.616 ********** 
+2021-04-11 19:36:43,321 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:43 +0200 (0:00:00.031)       0:00:14.615 ********** 
+2021-04-11 19:36:44,185 p=961435 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:36:44,194 p=961435 u=rmegens n=ansible | TASK [loadbalancer : Reset firewall] ****************************************************************************************************
+2021-04-11 19:36:44,194 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:44 +0200 (0:00:00.873)       0:00:15.489 ********** 
+2021-04-11 19:36:44,194 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:44 +0200 (0:00:00.873)       0:00:15.489 ********** 
+2021-04-11 19:36:44,890 p=961435 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:36:44,897 p=961435 u=rmegens n=ansible | TASK [De-install HAProxy from loadbalancer] *********************************************************************************************
+2021-04-11 19:36:44,897 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:44 +0200 (0:00:00.703)       0:00:16.193 ********** 
+2021-04-11 19:36:44,897 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:44 +0200 (0:00:00.703)       0:00:16.192 ********** 
+2021-04-11 19:36:51,958 p=961435 u=rmegens n=ansible | changed: [myserverc]
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | PLAY RECAP ******************************************************************************************************************************
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | myservera                  : ok=3    changed=2    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | myserverb                  : ok=3    changed=2    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | myserverc                  : ok=4    changed=3    unreachable=0    failed=0    skipped=4    rescued=0    ignored=0   
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 23 seconds
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:51 +0200 (0:00:07.078)       0:00:23.271 ********** 
+2021-04-11 19:36:51,975 p=961435 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | webserver -------------------------------------------------------------- 10.53s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | loadbalancer ------------------------------------------------------------ 8.78s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 3.95s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | total ------------------------------------------------------------------ 23.26s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | Sunday 11 April 2021  19:36:51 +0200 (0:00:07.078)       0:00:23.271 ********** 
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | =============================================================================== 
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | Remove Apache webserver software ------------------------------------------------------------------------------------------------- 9.25s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | De-install HAProxy from loadbalancer --------------------------------------------------------------------------------------------- 7.08s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 2.16s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------------------------------------------------------ 1.79s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | webserver : Reset firewall ------------------------------------------------------------------------------------------------------- 1.06s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | loadbalancer : Stop HAProxy service ---------------------------------------------------------------------------------------------- 0.87s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | loadbalancer : Reset firewall ---------------------------------------------------------------------------------------------------- 0.70s
+2021-04-11 19:36:51,976 p=961435 u=rmegens n=ansible | webserver : Copy index page ------------------------------------------------------------------------------------------------------ 0.04s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | webserver : Create document root folder if not exist ----------------------------------------------------------------------------- 0.04s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | webserver : Enable and Start Service --------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | webserver : Configure firewall --------------------------------------------------------------------------------------------------- 0.04s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | webserver : Install Apache2 ------------------------------------------------------------------------------------------------------ 0.04s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | Install HAProxy from loadbalancer ------------------------------------------------------------------------------------------------ 0.03s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | loadbalancer : Configure firewall ------------------------------------------------------------------------------------------------ 0.03s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | loadbalancer : Configure HAProxy ------------------------------------------------------------------------------------------------- 0.03s
+2021-04-11 19:36:51,977 p=961435 u=rmegens n=ansible | loadbalancer : Enable and Start HAProxy service ---------------------------------------------------------------------------------- 0.03s

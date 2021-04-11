@@ -1,0 +1,48 @@
+---
+# tasks file for loadbalancer
+- block:
+  - name: Install HAProxy from loadbalancer 
+    yum:
+      name: "{{ pkgname }}"
+      state: latest
+
+  - name: Configure HAProxy
+    template:
+      src: haproxy.cfg
+      dest: "{{ pkgconfigloc }}{{ pkgconfig }}"
+      owner: haproxy
+      group: haproxy
+      mode: 0644
+
+  - name: Enable and Start HAProxy service
+    service:
+      name: "{{ pkgservice }}"
+      state: started
+      enabled: true
+
+  - name: Configure firewall
+    firewalld:
+      service: "{{ pkgfirewall }}"
+      state: enabled
+      permanent: true
+      immediate: true
+  when: modus == 'install'
+
+- block:
+  - name: Stop HAProxy service
+    service:
+      name: "{{ pkgservice }}"
+      state: stopped
+
+  - name: Reset firewall
+    firewalld:
+      service: "{{ pkgfirewall }}"
+      state: disabled
+      permanent: true
+      immediate: true
+
+  - name: De-install HAProxy from loadbalancer 
+    yum:
+      name: "{{ pkgname }}"
+      state: absent
+  when: modus == 'remove'

@@ -1,0 +1,19 @@
+---
+- name: Remove the Webservers with a Role
+  hosts: webservers
+
+  vars:
+    modus: remove
+
+  roles:
+    - webserver
+
+
+- name: Remove the loadbalacner with a Role
+  hosts: loadbalancers
+
+  vars:
+    modus: remove
+
+  roles:
+    - loadbalancer

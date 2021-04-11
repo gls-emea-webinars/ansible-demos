@@ -1,0 +1,19 @@
+---
+- name: Install the Webservers with a Role
+  hosts: webservers
+
+  vars:
+    modus: install
+
+  roles:
+    - webserver
+
+
+- name: Install the loadbalacner with a Role
+  hosts: loadbalancers
+
+  vars:
+    modus: install
+ 
+  roles:
+    - loadbalancer

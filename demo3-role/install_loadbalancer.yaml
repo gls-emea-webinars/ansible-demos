@@ -1,0 +1,6 @@
+---
+- name: Install the Loadbalancer with a Role
+  hosts: loadbalancers
+
+  roles:
+    - loadbalancer
