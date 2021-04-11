@@ -2,25 +2,55 @@
 
 
 .Show all available hosts in the inventory
+[source]
 ----
-ansible all --list-hosts
+[demouser@demovm ~]# ansible all --list-hosts
 ----
 
 .Install some software
+[source, yaml]
 ----
+---
+- name: Install a webserver
+  hosts: webservers
 
+  vars:
 
+  tasks:
+    - name: Install Apache2
+      yum:
 
+    - name: Create document root folder if not exist
+      file:
 
+    - name: Copy index page
+      template:
+    
+    - name: Enable and Start Service
+      service:
+
+    - name: Configure firewall
+      firewalld:
 ----
 
 .Show installed software using the command module
+[source]
 ----
-ansible myservera.lenny.local -a "yum list httpd" --user devops
+[demouser@demovm ~]# ansible myservera.lenny.local -a "yum list httpd" --user devops
 ----
 
 .Remove some software
+[source, yaml]
 ----
+---
+- name: Remove webserver software
+  hosts: webservers
 
+  tasks:
+    - name: Remove Apache webserver software
+      yum:
+
+    - name: Reset firewall
+      firewalld:
 
 ----

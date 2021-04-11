@@ -1,0 +1,28 @@
+---
+- name: Remove HAProxy from load balancer
+  hosts: loadbalancers
+
+  vars:
+    pkgname: haproxy
+    pkgservice: haproxy
+    pkgfirewall: http
+    pkgconfig: haproxy.cfg
+    pkgconfigloc: /etc/haproxy/
+
+  tasks:
+    - name: Stop HAProxy service
+      service:
+        name: "{{ pkgservice }}"
+        state: stopped
+
+    - name: Reset firewall
+      firewalld:
+        service: "{{ pkgfirewall }}"
+        state: disabled
+        permanent: true
+        immediate: true
+
+    - name: De-install HAProxy from loadbalancer 
+      yum:
+        name: "{{ pkgname }}"
+        state: absent

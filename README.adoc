@@ -56,3 +56,26 @@ File - /etc/sudoers.d/devops
 # user devops does not need to authenticate again when using SUDO
 devops        ALL=(ALL)       NOPASSWD: ALL
 ----
+
+My Controlnode commandline
+[literal]
+----
+[demouser@demovm ~]# 
+----
+
+My managed node commandline
+[literal]
+----
+[devops@myserver[abc] ~]# 
+----
+
+My Colorscheme
+Using color.adobe.com
+[literal]
+----
+color 1: #D40F85
+color 2: #26D419
+color 3: #D41C04 -> used for myservera bgcolor
+color 4: #19C7D4 -> used for a elemnt color
+color 5: #D40F85 -> used for myserverb bgcolor
+----

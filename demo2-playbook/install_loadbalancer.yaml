@@ -1,0 +1,38 @@
+---
+- name: Install HAProxy on load balancer
+  hosts: loadbalancers
+
+  vars:
+    pkgname: haproxy
+    pkgservice: haproxy
+    pkgfirewall: http
+    pkgconfig: haproxy.cfg
+    pkgconfigloc: /etc/haproxy/
+
+  tasks:
+    - name: Install HAProxy from loadbalancer 
+      yum:
+        name: "{{ pkgname }}"
+        state: latest
+
+    - name: Configure HAProxy
+      template:
+        src: haproxy.cfg
+        dest: "{{ pkgconfigloc }}{{ pkgconfig }}"
+        owner: haproxy
+        group: haproxy
+        mode: 0644
+
+    - name: Enable and Start HAProxy service
+      service:
+        name: "{{ pkgservice }}"
+        state: started
+        enabled: true
+
+    - name: Configure firewall
+      firewalld:
+        service: "{{ pkgfirewall }}"
+        state: enabled
+        permanent: true
+        immediate: true
+    

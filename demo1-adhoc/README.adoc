@@ -1,5 +1,6 @@
 == Demo 1 Using Ad-Hoc commands
 
+
 .Show our prep work
 ----
 First we need to show that we made sure we can access the managed nodes using ssh without using a password. For this we need to have SSH-keys distributed. Also we need to have the managed nodes listed. We list our (static) managed nodes in an inventory file called 'myservers' in the folder 'inventory/'. 
