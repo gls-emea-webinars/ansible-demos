@@ -1,4 +1,5 @@
 = Demos belonging to the Ansible Hands-on Webinar
+:toc
 
 == Scenario
 
