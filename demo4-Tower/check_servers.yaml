@@ -3,5 +3,5 @@
   hosts: all
 
   tasks:
-    debug:
-      msg: "Server "
+    - debug:
+        msg: "Server {{ ansible_nodename }}"
