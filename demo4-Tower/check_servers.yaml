@@ -1,0 +1,7 @@
+---
+- name: Dude where are my servers
+  hosts: all
+
+  tasks:
+    debug:
+      msg: "Server "
