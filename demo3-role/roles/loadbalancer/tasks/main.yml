@@ -46,3 +46,9 @@
       name: "{{ pkgname }}"
       state: absent
   when: modus == 'remove'
+
+- block:
+  - name: No action required
+    debug:
+      msg: "No action required"
+  when: modus == 'skipme'

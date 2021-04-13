@@ -47,3 +47,9 @@
       state: disabled
       immediate: true
   when: modus == 'remove'
+
+- block:
+  - name: No actions
+    debug:
+      msg: "No action needed"
+  when: modus == 'skipme'
