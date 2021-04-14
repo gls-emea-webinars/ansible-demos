@@ -594,3 +594,133 @@ community.general in version 2.0.0. Deprecation warnings can be disabled by sett
 community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
 2021-04-10 23:02:59,966 p=835127 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix collection. This feature will be removed from 
 community.general in version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2021-04-13 16:23:45,484 p=176679 u=rmegens n=ansible |   hosts (6):
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myservera
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myserverb
+2021-04-13 16:23:45,485 p=176679 u=rmegens n=ansible |     myserverc
+2021-04-13 16:23:54,745 p=176755 u=rmegens n=ansible |   hosts (2):
+2021-04-13 16:23:54,745 p=176755 u=rmegens n=ansible |     myservera
+2021-04-13 16:23:54,745 p=176755 u=rmegens n=ansible |     myserverb
+2021-04-13 16:24:05,626 p=176825 u=rmegens n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: database
+
+2021-04-13 16:24:05,626 p=176825 u=rmegens n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2021-04-13 16:24:05,626 p=176825 u=rmegens n=ansible |   hosts (0):
+2021-04-13 16:24:55,097 p=177202 u=rmegens n=ansible |   hosts (2):
+2021-04-13 16:24:55,098 p=177202 u=rmegens n=ansible |     myservera
+2021-04-13 16:24:55,098 p=177202 u=rmegens n=ansible |     myserverb
+2021-04-13 16:25:16,838 p=177342 u=rmegens n=ansible |   hosts (1):
+2021-04-13 16:25:16,838 p=177342 u=rmegens n=ansible |     myserverc
+2021-04-13 16:33:54,264 p=179676 u=rmegens n=ansible | myservera | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: rmegens@myservera: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2021-04-13 16:34:11,538 p=179784 u=rmegens n=ansible | [WARNING]: Consider using the yum module rather than running 'yum'.  If you need to use command because
+yum is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2021-04-13 16:34:11,538 p=179784 u=rmegens n=ansible | myservera | CHANGED | rc=0 >>
+Updating Subscription Management repositories.
+Last metadata expiration check: 0:00:19 ago on Tue 13 Apr 2021 04:33:50 PM CEST.
+Available Packages
+httpd.x86_64 2.4.37-30.module+el8.3.0+7001+0766b9e7 rhel-8-for-x86_64-appstream-rpms
+
+2021-04-13 16:35:09,504 p=180076 u=rmegens n=ansible | myservera | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "msg": "",
+    "rc": 0,
+    "results": [
+        "Installed: httpd-2.4.37-30.module+el8.3.0+7001+0766b9e7.x86_64",
+        "Installed: mod_http2-1.15.7-2.module+el8.3.0+7670+8bf57d29.x86_64"
+    ]
+}
+2021-04-14 10:30:23,637 p=446105 u=rmegens n=ansible |   hosts (6):
+2021-04-14 10:30:23,637 p=446105 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-14 10:30:23,637 p=446105 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-14 10:30:23,637 p=446105 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-14 10:30:23,637 p=446105 u=rmegens n=ansible |     myservera
+2021-04-14 10:30:23,638 p=446105 u=rmegens n=ansible |     myserverb
+2021-04-14 10:30:23,638 p=446105 u=rmegens n=ansible |     myserverc
+2021-04-14 10:30:44,978 p=446259 u=rmegens n=ansible | myservera | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: rmegens@myservera: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2021-04-14 10:31:01,960 p=446332 u=rmegens n=ansible | [WARNING]: Consider using the yum module rather than running 'yum'.  If you need to use command because
+yum is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in
+ansible.cfg to get rid of this message.
+
+2021-04-14 10:31:01,961 p=446332 u=rmegens n=ansible | myservera | CHANGED | rc=0 >>
+Updating Subscription Management repositories.
+Last metadata expiration check: 2:51:17 ago on Wed 14 Apr 2021 07:39:42 AM CEST.
+Available Packages
+httpd.x86_64 2.4.37-30.module+el8.3.0+7001+0766b9e7 rhel-8-for-x86_64-appstream-rpms
+
+2021-04-14 13:28:06,479 p=497654 u=rmegens n=ansible |   hosts (6):
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myservera
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myserverb
+2021-04-14 13:28:06,480 p=497654 u=rmegens n=ansible |     myserverc
+2021-04-14 13:29:16,490 p=497990 u=rmegens n=ansible |   hosts (2):
+2021-04-14 13:29:16,490 p=497990 u=rmegens n=ansible |     myservera
+2021-04-14 13:29:16,490 p=497990 u=rmegens n=ansible |     myserverb
+2021-04-14 13:30:18,894 p=498265 u=rmegens n=ansible | myservera | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: rmegens@myservera: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2021-04-14 13:30:55,050 p=498396 u=rmegens n=ansible | myservera | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/libexec/platform-python"
+    },
+    "changed": true,
+    "msg": "",
+    "rc": 0,
+    "results": [
+        "Installed: redhat-logos-httpd-81.1-1.el8.noarch",
+        "Installed: httpd-tools-2.4.37-30.module+el8.3.0+7001+0766b9e7.x86_64",
+        "Installed: apr-1.6.3-11.el8.x86_64",
+        "Installed: apr-util-bdb-1.6.1-6.el8.x86_64",
+        "Installed: apr-util-1.6.1-6.el8.x86_64",
+        "Installed: apr-util-openssl-1.6.1-6.el8.x86_64",
+        "Installed: httpd-2.4.37-30.module+el8.3.0+7001+0766b9e7.x86_64",
+        "Installed: httpd-filesystem-2.4.37-30.module+el8.3.0+7001+0766b9e7.noarch",
+        "Installed: mod_http2-1.15.7-2.module+el8.3.0+7670+8bf57d29.x86_64"
+    ]
+}
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |   hosts (6):
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myservera.lenny.local
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myserverb.lenny.local
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myserverc.lenny.local
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myservera
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myserverb
+2021-04-14 14:36:58,360 p=518112 u=rmegens n=ansible |     myserverc
+2021-04-14 14:37:33,646 p=518283 u=rmegens n=ansible | myserverb | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host myserverb port 22: Connection refused
+
+2021-04-14 14:37:33,647 p=518283 u=rmegens n=ansible | myserverb.lenny.local | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host myserverb.lenny.local port 22: Connection refused
+
+2021-04-14 14:37:33,694 p=518283 u=rmegens n=ansible | myserverc | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host myserverc port 22: Connection refused",
+    "unreachable": true
+}
+2021-04-14 14:37:33,983 p=518283 u=rmegens n=ansible | myservera.lenny.local | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host myservera.lenny.local port 22: Connection refused
+
+2021-04-14 14:37:33,986 p=518283 u=rmegens n=ansible | myservera | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host myservera port 22: Connection refused
+
+2021-04-14 14:37:34,574 p=518283 u=rmegens n=ansible | myserverc.lenny.local | FAILED | rc=-1 >>
+Failed to connect to the host via ssh: ssh: connect to host myserverc.lenny.local port 22: Connection refused
+

@@ -5,36 +5,43 @@
 == Scenario
 
 === Single server installatiom 
-Setup a Webserver
-- install Apache
-- copy the index page
-    - using a template and jinja2
-- start the apache service
-- configure the firewall
+.Setup a Webserver
+* install Apache
+* copy the index page
+  - using a template and jinja2
+* start the apache service
+* configure the firewall
 
 === Multiple webservers with a load balancer
-Setup a HAProxy load balancer
-- install HAproxy
-- copy template HAproxy config
-    - use the webservers group in the inventory file to populate the endpoints
-- start the HAproxy service
-- configure the firewall
+.Setup a HAProxy load balancer
+* install HAproxy
+* copy template HAproxy config
+  - use the webservers group in the inventory file to populate the endpoints
+* start the HAproxy service
+* configure the firewall
 
-Reconfigure the webservers
-- change the background color of index.html to show the effect of the loadbalancer
-    - myservera -> blue
-    - myserverb -> yellow
+.Reconfigure the webservers
+* change the background color of index.html to show the effect of the loadbalancer
+  - myservera -> blue
+  - myserverb -> yellow
 
 == Demo Environment
-- Ansible Tower installed on local laptop
-- myservera, myserverb, myserverc as VM on local laptop
-- github public repo
-- local account _devops_ created on all servers
-- /etc/hosts configured with aliasses for the scenarios
-    - mywebservera
-    - mywebserverb
-    - mylbserverc
+* Ansible Tower installed on local laptop
+* VM on local laptop
+  - myservera, myserverb, myserverc
+  - OS RHEL8 
+* github public repo
+  - https://github.com/gls-emea-webinars/ansible-demos.git
+* local account _devops_ created on all servers
+* /etc/hosts configured with aliasses for the scenarios
+  - mywebservera
+  - mywebserverb
+  - mylbserverc
 
+
+=== Useful playbooks
+.Create devops user for playbooks
+[source, yaml]
 ----
 - name: Add the user 'devops' with a specific uid and a primary group of 'admin'
   user:
@@ -51,31 +58,23 @@ Reconfigure the webservers
     ssh_key_file: .ssh/id_rsa
 ----
 
-File - /etc/sudoers.d/devops
+.Modify sudo on managed node
+Filename: /etc/sudoers.d/devops
+[source, text]
 ----
 # user devops does not need to authenticate again when using SUDO
 devops        ALL=(ALL)       NOPASSWD: ALL
 ----
 
-My Controlnode commandline
-[literal]
-----
-[demouser@demovm ~]# 
-----
 
-My managed node commandline
-[literal]
-----
-[devops@myserver[abc] ~]# 
-----
 
-My Colorscheme
-Using color.adobe.com
+=== My Colorscheme
+Created by color.adobe.com
 [literal]
 ----
 color 1: #D40F85
 color 2: #26D419
 color 3: #D41C04 -> used for myservera bgcolor
-color 4: #19C7D4 -> used for a elemnt color
+color 4: #19C7D4 -> used for <a href> element color
 color 5: #D40F85 -> used for myserverb bgcolor
 ----

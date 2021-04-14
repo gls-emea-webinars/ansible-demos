@@ -1,0 +1,7 @@
+== Demo 3 - Roles
+
+=== Create a role scaffold
+[source, text]
+----
+ansible-galaxy role init demorole
+----
