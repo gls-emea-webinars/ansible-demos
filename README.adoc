@@ -32,6 +32,7 @@
   - OS RHEL8 
 * github public repo
   - https://github.com/gls-emea-webinars/ansible-demos.git
+  - branch: latest-20210414
 * local account _devops_ created on all servers
 * /etc/hosts configured with aliasses for the scenarios
   - mywebservera
