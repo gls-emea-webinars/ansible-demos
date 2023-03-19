@@ -9,7 +9,7 @@
     - webserver
 
 
-- name: Remove the loadbalacner with a Role
+- name: Remove the loadbalancer with a Role
   hosts: loadbalancers
 
   vars:

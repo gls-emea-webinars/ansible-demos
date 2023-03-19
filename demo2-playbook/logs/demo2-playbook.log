@@ -3507,3 +3507,1364 @@ version 2.0.0. Deprecation warnings can be disabled by setting deprecation_warni
 2021-04-14 13:45:44,574 p=502483 u=rmegens n=ansible | Configure firewall --------------------------------------------------------------------------------------------------------------------------- 1.48s
 2021-04-14 13:45:44,574 p=502483 u=rmegens n=ansible | Copy index page ------------------------------------------------------------------------------------------------------------------------------ 1.24s
 2021-04-14 13:45:44,574 p=502483 u=rmegens n=ansible | Create document root folder if not exist ----------------------------------------------------------------------------------------------------- 0.66s
+2021-06-10 14:17:21,590 p=1461669 u=rmegens n=ansible | [DEPRECATION WARNING]: The firewalld module has been moved to the ansible.posix 
+collection. This feature will be removed from community.general in version 2.0.0. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2021-06-10 14:17:21,605 p=1461669 u=rmegens n=ansible | PLAY [Install a webserver] **************************************************************
+2021-06-10 14:17:21,616 p=1461669 u=rmegens n=ansible | TASK [Gathering Facts] ******************************************************************
+2021-06-10 14:17:21,617 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:21 +0200 (0:00:00.016)       0:00:00.016 ********* 
+2021-06-10 14:17:21,617 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:21 +0200 (0:00:00.016)       0:00:00.016 ********* 
+2021-06-10 14:17:24,374 p=1461669 u=rmegens n=ansible | ok: [myserverb]
+2021-06-10 14:17:24,384 p=1461669 u=rmegens n=ansible | ok: [myservera]
+2021-06-10 14:17:24,414 p=1461669 u=rmegens n=ansible | TASK [Install Apache2] ******************************************************************
+2021-06-10 14:17:24,414 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:24 +0200 (0:00:02.797)       0:00:02.814 ********* 
+2021-06-10 14:17:24,415 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:24 +0200 (0:00:02.797)       0:00:02.813 ********* 
+2021-06-10 14:17:38,648 p=1461669 u=rmegens n=ansible | changed: [myserverb]
+2021-06-10 14:17:55,265 p=1461669 u=rmegens n=ansible | changed: [myservera]
+2021-06-10 14:17:55,283 p=1461669 u=rmegens n=ansible | TASK [Create document root folder if not exist] *****************************************
+2021-06-10 14:17:55,284 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:55 +0200 (0:00:30.869)       0:00:33.683 ********* 
+2021-06-10 14:17:55,284 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:55 +0200 (0:00:30.869)       0:00:33.682 ********* 
+2021-06-10 14:17:56,513 p=1461669 u=rmegens n=ansible | changed: [myserverb]
+2021-06-10 14:17:56,592 p=1461669 u=rmegens n=ansible | changed: [myservera]
+2021-06-10 14:17:56,605 p=1461669 u=rmegens n=ansible | TASK [Copy index page] ******************************************************************
+2021-06-10 14:17:56,605 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:56 +0200 (0:00:01.321)       0:00:35.004 ********* 
+2021-06-10 14:17:56,605 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:56 +0200 (0:00:01.321)       0:00:35.004 ********* 
+2021-06-10 14:17:58,803 p=1461669 u=rmegens n=ansible | changed: [myserverb]
+2021-06-10 14:17:58,826 p=1461669 u=rmegens n=ansible | changed: [myservera]
+2021-06-10 14:17:58,843 p=1461669 u=rmegens n=ansible | TASK [Enable and Start Service] *********************************************************
+2021-06-10 14:17:58,844 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:58 +0200 (0:00:02.238)       0:00:37.243 ********* 
+2021-06-10 14:17:58,844 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:17:58 +0200 (0:00:02.238)       0:00:37.242 ********* 
+2021-06-10 14:18:00,449 p=1461669 u=rmegens n=ansible | ok: [myserverb]
+2021-06-10 14:18:01,814 p=1461669 u=rmegens n=ansible | changed: [myservera]
+2021-06-10 14:18:01,825 p=1461669 u=rmegens n=ansible | TASK [Configure firewall] ***************************************************************
+2021-06-10 14:18:01,826 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:18:01 +0200 (0:00:02.982)       0:00:40.225 ********* 
+2021-06-10 14:18:01,826 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:18:01 +0200 (0:00:02.982)       0:00:40.224 ********* 
+2021-06-10 14:18:03,293 p=1461669 u=rmegens n=ansible | ok: [myserverb]
+2021-06-10 14:18:04,048 p=1461669 u=rmegens n=ansible | ok: [myservera]
+2021-06-10 14:18:04,074 p=1461669 u=rmegens n=ansible | PLAY RECAP ******************************************************************************
+2021-06-10 14:18:04,075 p=1461669 u=rmegens n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-06-10 14:18:04,075 p=1461669 u=rmegens n=ansible | myserverb                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-06-10 14:18:04,075 p=1461669 u=rmegens n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 42 seconds
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:18:04 +0200 (0:00:02.249)       0:00:42.475 ********* 
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | =============================================================================== 
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | yum -------------------------------------------------------------------- 30.87s
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | service ----------------------------------------------------------------- 2.98s
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | gather_facts ------------------------------------------------------------ 2.80s
+2021-06-10 14:18:04,076 p=1461669 u=rmegens n=ansible | firewalld --------------------------------------------------------------- 2.25s
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | template ---------------------------------------------------------------- 2.24s
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | file -------------------------------------------------------------------- 1.32s
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | total ------------------------------------------------------------------ 42.46s
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | Thursday 10 June 2021  14:18:04 +0200 (0:00:02.251)       0:00:42.476 ********* 
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | =============================================================================== 
+2021-06-10 14:18:04,077 p=1461669 u=rmegens n=ansible | Install Apache2 ----------------------------------------------------------------- 30.87s
+2021-06-10 14:18:04,078 p=1461669 u=rmegens n=ansible | Enable and Start Service --------------------------------------------------------- 2.98s
+2021-06-10 14:18:04,078 p=1461669 u=rmegens n=ansible | Gathering Facts ------------------------------------------------------------------ 2.80s
+2021-06-10 14:18:04,078 p=1461669 u=rmegens n=ansible | Configure firewall --------------------------------------------------------------- 2.25s
+2021-06-10 14:18:04,078 p=1461669 u=rmegens n=ansible | Copy index page ------------------------------------------------------------------ 2.24s
+2021-06-10 14:18:04,078 p=1461669 u=rmegens n=ansible | Create document root folder if not exist ----------------------------------------- 1.32s
+2023-03-19 13:26:42,733 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:26:42,858 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:26:44,110 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:26:44,413 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:26:44,430 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:26:44,431 p=26 u=root n=ansible | Sunday 19 March 2023  13:26:44 +0000 (0:00:00.023)       0:00:00.023 ********** 
+2023-03-19 13:26:44,431 p=26 u=root n=ansible | Sunday 19 March 2023  13:26:44 +0000 (0:00:00.022)       0:00:00.022 ********** 
+2023-03-19 13:26:44,470 p=26 u=root n=ansible | fatal: [myservera]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:26:44,480 p=26 u=root n=ansible | fatal: [myserverb]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:26:44,482 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:26:44,482 p=26 u=root n=ansible | myservera                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:26:44,483 p=26 u=root n=ansible | myserverb                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:26:44,483 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-19 13:26:44,484 p=26 u=root n=ansible | Sunday 19 March 2023  13:26:44 +0000 (0:00:00.052)       0:00:00.076 ********** 
+2023-03-19 13:26:44,484 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:26:44,484 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 0.05s
+2023-03-19 13:26:44,485 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:26:44,485 p=26 u=root n=ansible | total ------------------------------------------------------------------- 0.05s
+2023-03-19 13:26:44,485 p=26 u=root n=ansible | Sunday 19 March 2023  13:26:44 +0000 (0:00:00.054)       0:00:00.076 ********** 
+2023-03-19 13:26:44,486 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:26:44,486 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.05s
+2023-03-19 13:29:29,206 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:29:29,225 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:29:30,331 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:29:30,631 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:29:30,649 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:29:30,649 p=26 u=root n=ansible | Sunday 19 March 2023  13:29:30 +0000 (0:00:00.022)       0:00:00.022 ********** 
+2023-03-19 13:29:30,650 p=26 u=root n=ansible | Sunday 19 March 2023  13:29:30 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 13:29:30,695 p=26 u=root n=ansible | fatal: [myservera]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:29:30,701 p=26 u=root n=ansible | fatal: [myserverb]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:29:30,703 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:29:30,703 p=26 u=root n=ansible | myservera                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:29:30,703 p=26 u=root n=ansible | myserverb                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:29:30,704 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-19 13:29:30,704 p=26 u=root n=ansible | Sunday 19 March 2023  13:29:30 +0000 (0:00:00.055)       0:00:00.078 ********** 
+2023-03-19 13:29:30,705 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:29:30,705 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 0.06s
+2023-03-19 13:29:30,705 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:29:30,706 p=26 u=root n=ansible | total ------------------------------------------------------------------- 0.06s
+2023-03-19 13:29:30,706 p=26 u=root n=ansible | Sunday 19 March 2023  13:29:30 +0000 (0:00:00.056)       0:00:00.078 ********** 
+2023-03-19 13:29:30,706 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:29:30,707 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.06s
+2023-03-19 13:33:23,861 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:33:23,880 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:33:25,007 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:33:25,317 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:33:25,334 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:33:25,335 p=26 u=root n=ansible | Sunday 19 March 2023  13:33:25 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 13:33:25,335 p=26 u=root n=ansible | Sunday 19 March 2023  13:33:25 +0000 (0:00:00.020)       0:00:00.020 ********** 
+2023-03-19 13:33:25,378 p=26 u=root n=ansible | fatal: [myservera]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:33:25,385 p=26 u=root n=ansible | fatal: [myserverb]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Bad owner or permissions on /etc/ssh/ssh_config.d/05-redhat.conf", "unreachable": true}
+2023-03-19 13:33:25,388 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:33:25,388 p=26 u=root n=ansible | myservera                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:33:25,389 p=26 u=root n=ansible | myserverb                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:33:25,390 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-19 13:33:25,391 p=26 u=root n=ansible | Sunday 19 March 2023  13:33:25 +0000 (0:00:00.055)       0:00:00.078 ********** 
+2023-03-19 13:33:25,391 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:33:25,392 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 0.06s
+2023-03-19 13:33:25,392 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:33:25,393 p=26 u=root n=ansible | total ------------------------------------------------------------------- 0.06s
+2023-03-19 13:33:25,393 p=26 u=root n=ansible | Sunday 19 March 2023  13:33:25 +0000 (0:00:00.058)       0:00:00.079 ********** 
+2023-03-19 13:33:25,394 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:33:25,394 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.06s
+2023-03-19 13:37:26,186 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:37:26,202 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:37:27,321 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:37:27,636 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:37:27,656 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:37:27,656 p=26 u=root n=ansible | Sunday 19 March 2023  13:37:27 +0000 (0:00:00.027)       0:00:00.027 ********** 
+2023-03-19 13:37:27,657 p=26 u=root n=ansible | Sunday 19 March 2023  13:37:27 +0000 (0:00:00.024)       0:00:00.024 ********** 
+2023-03-19 13:37:27,698 p=26 u=root n=ansible | fatal: [myservera]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Can't open user config file /etc/ssh/ssh_config.d/05-redhat.conf: Permission denied", "unreachable": true}
+2023-03-19 13:37:27,714 p=26 u=root n=ansible | fatal: [myserverb]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Can't open user config file /etc/ssh/ssh_config.d/05-redhat.conf: Permission denied", "unreachable": true}
+2023-03-19 13:37:27,716 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:37:27,716 p=26 u=root n=ansible | myservera                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:37:27,716 p=26 u=root n=ansible | myserverb                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:37:27,716 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2023-03-19 13:37:27,717 p=26 u=root n=ansible | Sunday 19 March 2023  13:37:27 +0000 (0:00:00.060)       0:00:00.087 ********** 
+2023-03-19 13:37:27,717 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:37:27,717 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 0.06s
+2023-03-19 13:37:27,718 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:37:27,718 p=26 u=root n=ansible | total ------------------------------------------------------------------- 0.06s
+2023-03-19 13:37:27,718 p=26 u=root n=ansible | Sunday 19 March 2023  13:37:27 +0000 (0:00:00.061)       0:00:00.086 ********** 
+2023-03-19 13:37:27,719 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:37:27,719 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.06s
+2023-03-19 13:39:00,829 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:39:00,845 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:39:01,982 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:39:02,307 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:39:02,328 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:39:02,329 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:02 +0000 (0:00:00.027)       0:00:00.027 ********** 
+2023-03-19 13:39:02,329 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:02 +0000 (0:00:00.025)       0:00:00.025 ********** 
+2023-03-19 13:39:04,709 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:39:04,952 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:39:04,994 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 13:39:04,994 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:04 +0000 (0:00:02.665)       0:00:02.693 ********** 
+2023-03-19 13:39:04,995 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:04 +0000 (0:00:02.665)       0:00:02.691 ********** 
+2023-03-19 13:39:06,022 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:39:06,062 p=26 u=root n=ansible | fatal: [myserverb]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:39:06,071 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:39:06,072 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:39:06,072 p=26 u=root n=ansible | myserverb                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:39:06,073 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 3 seconds
+2023-03-19 13:39:06,073 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:06 +0000 (0:00:01.078)       0:00:03.772 ********** 
+2023-03-19 13:39:06,074 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:39:06,075 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 2.67s
+2023-03-19 13:39:06,076 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 1.08s
+2023-03-19 13:39:06,077 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:39:06,078 p=26 u=root n=ansible | total ------------------------------------------------------------------- 3.75s
+2023-03-19 13:39:06,078 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:06 +0000 (0:00:01.083)       0:00:03.774 ********** 
+2023-03-19 13:39:06,079 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:39:06,080 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.67s
+2023-03-19 13:39:06,083 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 1.08s
+2023-03-19 13:39:26,279 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:39:26,298 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:39:27,384 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:39:27,703 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:39:27,720 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:39:27,721 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:27 +0000 (0:00:00.024)       0:00:00.024 ********** 
+2023-03-19 13:39:27,721 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:27 +0000 (0:00:00.022)       0:00:00.022 ********** 
+2023-03-19 13:39:30,023 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:39:30,323 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:39:30,366 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 13:39:30,367 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:30 +0000 (0:00:02.646)       0:00:02.670 ********** 
+2023-03-19 13:39:30,368 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:30 +0000 (0:00:02.646)       0:00:02.668 ********** 
+2023-03-19 13:39:31,402 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:39:31,449 p=26 u=root n=ansible | fatal: [myserverb]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:39:31,451 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:39:31,452 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:39:31,452 p=26 u=root n=ansible | myserverb                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:39:31,452 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 3 seconds
+2023-03-19 13:39:31,453 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:31 +0000 (0:00:01.085)       0:00:03.756 ********** 
+2023-03-19 13:39:31,453 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:39:31,454 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 2.65s
+2023-03-19 13:39:31,454 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 1.09s
+2023-03-19 13:39:31,454 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:39:31,455 p=26 u=root n=ansible | total ------------------------------------------------------------------- 3.73s
+2023-03-19 13:39:31,455 p=26 u=root n=ansible | Sunday 19 March 2023  13:39:31 +0000 (0:00:01.087)       0:00:03.756 ********** 
+2023-03-19 13:39:31,456 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:39:31,456 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.65s
+2023-03-19 13:39:31,456 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 1.09s
+2023-03-19 13:40:30,135 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:40:30,152 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:40:31,178 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:40:33,450 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:40:33,466 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:40:34,474 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:42:47,253 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:42:47,270 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:42:48,372 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:42:48,734 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:42:48,751 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:42:48,752 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:48 +0000 (0:00:00.023)       0:00:00.023 ********** 
+2023-03-19 13:42:48,752 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:48 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 13:42:51,020 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:42:51,256 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:42:51,298 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 13:42:51,299 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:51 +0000 (0:00:02.547)       0:00:02.570 ********** 
+2023-03-19 13:42:51,301 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:51 +0000 (0:00:02.548)       0:00:02.569 ********** 
+2023-03-19 13:42:52,339 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:42:52,401 p=26 u=root n=ansible | fatal: [myserverb]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2023-03-19 13:42:52,404 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:42:52,404 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:42:52,405 p=26 u=root n=ansible | myserverb                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:42:52,405 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 3 seconds
+2023-03-19 13:42:52,406 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:52 +0000 (0:00:01.106)       0:00:03.677 ********** 
+2023-03-19 13:42:52,406 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:42:52,406 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 2.55s
+2023-03-19 13:42:52,407 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 1.11s
+2023-03-19 13:42:52,407 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:42:52,408 p=26 u=root n=ansible | total ------------------------------------------------------------------- 3.65s
+2023-03-19 13:42:52,408 p=26 u=root n=ansible | Sunday 19 March 2023  13:42:52 +0000 (0:00:01.107)       0:00:03.677 ********** 
+2023-03-19 13:42:52,409 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:42:52,409 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.55s
+2023-03-19 13:42:52,410 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 1.11s
+2023-03-19 13:43:57,523 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:43:57,541 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:43:58,649 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:43:58,959 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:43:58,977 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:43:58,978 p=26 u=root n=ansible | Sunday 19 March 2023  13:43:58 +0000 (0:00:00.024)       0:00:00.024 ********** 
+2023-03-19 13:43:58,978 p=26 u=root n=ansible | Sunday 19 March 2023  13:43:58 +0000 (0:00:00.022)       0:00:00.022 ********** 
+2023-03-19 13:44:01,430 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:44:01,679 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:44:01,718 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 13:44:01,718 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:01 +0000 (0:00:02.740)       0:00:02.764 ********** 
+2023-03-19 13:44:01,719 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:01 +0000 (0:00:02.740)       0:00:02.763 ********** 
+2023-03-19 13:44:03,894 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:44:14,405 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 13:44:14,417 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 13:44:14,417 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:14 +0000 (0:00:12.698)       0:00:15.463 ********** 
+2023-03-19 13:44:14,418 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:14 +0000 (0:00:12.698)       0:00:15.462 ********** 
+2023-03-19 13:44:15,221 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:44:15,286 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 13:44:15,302 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 13:44:15,302 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:15 +0000 (0:00:00.885)       0:00:16.348 ********** 
+2023-03-19 13:44:15,303 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:15 +0000 (0:00:00.885)       0:00:16.347 ********** 
+2023-03-19 13:44:17,030 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 13:44:17,044 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 13:44:17,055 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 13:44:17,056 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:17 +0000 (0:00:01.753)       0:00:18.102 ********** 
+2023-03-19 13:44:17,057 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:17 +0000 (0:00:01.753)       0:00:18.101 ********** 
+2023-03-19 13:44:18,215 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:44:18,268 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:44:18,279 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 13:44:18,279 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:18 +0000 (0:00:01.223)       0:00:19.325 ********** 
+2023-03-19 13:44:18,280 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:18 +0000 (0:00:01.223)       0:00:19.324 ********** 
+2023-03-19 13:44:19,341 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:44:19,468 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:44:19,543 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 13:44:19,552 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:44:19,552 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:19 +0000 (0:00:01.273)       0:00:20.598 ********** 
+2023-03-19 13:44:19,553 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:19 +0000 (0:00:01.273)       0:00:20.597 ********** 
+2023-03-19 13:44:20,490 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 13:44:20,519 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 13:44:20,520 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:20 +0000 (0:00:00.967)       0:00:21.566 ********** 
+2023-03-19 13:44:20,520 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:20 +0000 (0:00:00.967)       0:00:21.564 ********** 
+2023-03-19 13:44:21,340 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 13:44:21,373 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:44:21,373 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:44:21,373 p=26 u=root n=ansible | myservera                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:44:21,373 p=26 u=root n=ansible | myserverb                  : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:44:21,374 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 22 seconds
+2023-03-19 13:44:21,374 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:21 +0000 (0:00:00.854)       0:00:22.420 ********** 
+2023-03-19 13:44:21,375 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:44:21,375 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 12.70s
+2023-03-19 13:44:21,375 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.71s
+2023-03-19 13:44:21,376 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.75s
+2023-03-19 13:44:21,376 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.27s
+2023-03-19 13:44:21,376 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.22s
+2023-03-19 13:44:21,377 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.88s
+2023-03-19 13:44:21,377 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 0.85s
+2023-03-19 13:44:21,377 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:44:21,378 p=26 u=root n=ansible | total ------------------------------------------------------------------ 22.40s
+2023-03-19 13:44:21,378 p=26 u=root n=ansible | Sunday 19 March 2023  13:44:21 +0000 (0:00:00.857)       0:00:22.422 ********** 
+2023-03-19 13:44:21,378 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:44:21,379 p=26 u=root n=ansible | Install Apache2 -------------------------------------------------------- 12.70s
+2023-03-19 13:44:21,379 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.74s
+2023-03-19 13:44:21,379 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.75s
+2023-03-19 13:44:21,380 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.27s
+2023-03-19 13:44:21,380 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.22s
+2023-03-19 13:44:21,381 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.97s
+2023-03-19 13:44:21,381 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.89s
+2023-03-19 13:44:21,382 p=26 u=root n=ansible | test using the URI ------------------------------------------------------ 0.86s
+2023-03-19 13:51:24,709 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:51:24,728 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 13:51:25,750 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 13:51:26,046 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 13:51:26,060 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:51:26,061 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:26 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 13:51:26,061 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:26 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 13:51:28,483 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:51:28,727 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:51:28,762 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 13:51:28,762 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:28 +0000 (0:00:02.701)       0:00:02.720 ********** 
+2023-03-19 13:51:28,763 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:28 +0000 (0:00:02.701)       0:00:02.719 ********** 
+2023-03-19 13:51:30,368 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:51:34,653 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:51:34,662 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 13:51:34,662 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:34 +0000 (0:00:05.899)       0:00:08.620 ********** 
+2023-03-19 13:51:34,663 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:34 +0000 (0:00:05.899)       0:00:08.619 ********** 
+2023-03-19 13:51:35,409 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:51:35,464 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:51:35,472 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 13:51:35,473 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:35 +0000 (0:00:00.810)       0:00:09.431 ********** 
+2023-03-19 13:51:35,473 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:35 +0000 (0:00:00.810)       0:00:09.429 ********** 
+2023-03-19 13:51:36,935 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 13:51:36,955 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 13:51:36,965 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 13:51:36,966 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:36 +0000 (0:00:01.492)       0:00:10.923 ********** 
+2023-03-19 13:51:36,966 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:36 +0000 (0:00:01.492)       0:00:10.922 ********** 
+2023-03-19 13:51:38,061 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:51:38,106 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:51:38,117 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 13:51:38,117 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:38 +0000 (0:00:01.151)       0:00:12.075 ********** 
+2023-03-19 13:51:38,118 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:38 +0000 (0:00:01.151)       0:00:12.074 ********** 
+2023-03-19 13:51:39,087 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 13:51:39,098 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 13:51:39,152 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 13:51:39,158 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 13:51:39,159 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:39 +0000 (0:00:01.041)       0:00:13.116 ********** 
+2023-03-19 13:51:39,159 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:39 +0000 (0:00:01.041)       0:00:13.115 ********** 
+2023-03-19 13:51:39,964 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 13:51:39,991 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 13:51:39,991 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:39 +0000 (0:00:00.832)       0:00:13.949 ********** 
+2023-03-19 13:51:39,992 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:39 +0000 (0:00:00.832)       0:00:13.948 ********** 
+2023-03-19 13:51:40,676 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 13:51:40,701 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 13:51:40,701 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:51:40,701 p=26 u=root n=ansible | myservera                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:51:40,701 p=26 u=root n=ansible | myserverb                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 13:51:40,702 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 14 seconds
+2023-03-19 13:51:40,702 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:40 +0000 (0:00:00.710)       0:00:14.660 ********** 
+2023-03-19 13:51:40,702 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:51:40,703 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 5.90s
+2023-03-19 13:51:40,703 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.53s
+2023-03-19 13:51:40,703 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.49s
+2023-03-19 13:51:40,704 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.15s
+2023-03-19 13:51:40,704 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.04s
+2023-03-19 13:51:40,704 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.81s
+2023-03-19 13:51:40,705 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 0.71s
+2023-03-19 13:51:40,705 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 13:51:40,706 p=26 u=root n=ansible | total ------------------------------------------------------------------ 14.64s
+2023-03-19 13:51:40,706 p=26 u=root n=ansible | Sunday 19 March 2023  13:51:40 +0000 (0:00:00.714)       0:00:14.662 ********** 
+2023-03-19 13:51:40,706 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 13:51:40,707 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 5.90s
+2023-03-19 13:51:40,707 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.70s
+2023-03-19 13:51:40,708 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.49s
+2023-03-19 13:51:40,708 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.15s
+2023-03-19 13:51:40,708 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.04s
+2023-03-19 13:51:40,709 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.83s
+2023-03-19 13:51:40,709 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.81s
+2023-03-19 13:51:40,710 p=26 u=root n=ansible | test using the URI ------------------------------------------------------ 0.71s
+2023-03-19 14:01:02,152 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:01:02,170 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:01:03,228 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:01:03,535 p=26 u=root n=ansible | PLAY [Remove webserver software] ***********************************************
+2023-03-19 14:01:03,550 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:01:03,551 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:03 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 14:01:03,551 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:03 +0000 (0:00:00.019)       0:00:00.019 ********** 
+2023-03-19 14:01:06,015 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:01:06,306 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:01:06,343 p=26 u=root n=ansible | TASK [Remove Apache webserver software] ****************************************
+2023-03-19 14:01:06,344 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:06 +0000 (0:00:02.793)       0:00:02.814 ********** 
+2023-03-19 14:01:06,345 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:06 +0000 (0:00:02.793)       0:00:02.813 ********** 
+2023-03-19 14:01:11,086 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:01:16,567 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:01:16,575 p=26 u=root n=ansible | TASK [Reset firewall] **********************************************************
+2023-03-19 14:01:16,576 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:16 +0000 (0:00:10.231)       0:00:13.045 ********** 
+2023-03-19 14:01:16,576 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:16 +0000 (0:00:10.231)       0:00:13.044 ********** 
+2023-03-19 14:01:17,678 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:01:17,749 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:01:17,805 p=26 u=root n=ansible | PLAY [test webserver removal] **************************************************
+2023-03-19 14:01:17,813 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:01:17,813 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:17 +0000 (0:00:01.237)       0:00:14.283 ********** 
+2023-03-19 14:01:17,814 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:17 +0000 (0:00:01.237)       0:00:14.282 ********** 
+2023-03-19 14:01:18,520 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:01:18,545 p=26 u=root n=ansible | TASK [test if the webserver service is no longer providing an answer by expecting a 'page not found' error] ***
+2023-03-19 14:01:18,545 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:18 +0000 (0:00:00.731)       0:00:15.015 ********** 
+2023-03-19 14:01:18,546 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:18 +0000 (0:00:00.731)       0:00:15.014 ********** 
+2023-03-19 14:01:49,230 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "elapsed": 30, "msg": "Status code was -1 and not [403]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myserverb"}
+2023-03-19 14:01:49,232 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:01:49,232 p=26 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:01:49,232 p=26 u=root n=ansible | myservera                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:01:49,232 p=26 u=root n=ansible | myserverb                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:01:49,233 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 45 seconds
+2023-03-19 14:01:49,233 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:49 +0000 (0:00:30.687)       0:00:45.703 ********** 
+2023-03-19 14:01:49,233 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:01:49,234 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.69s
+2023-03-19 14:01:49,235 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 10.23s
+2023-03-19 14:01:49,235 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.52s
+2023-03-19 14:01:49,236 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.24s
+2023-03-19 14:01:49,236 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:01:49,236 p=26 u=root n=ansible | total ------------------------------------------------------------------ 45.68s
+2023-03-19 14:01:49,237 p=26 u=root n=ansible | Sunday 19 March 2023  14:01:49 +0000 (0:00:30.691)       0:00:45.705 ********** 
+2023-03-19 14:01:49,237 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:01:49,238 p=26 u=root n=ansible | test if the webserver service is no longer providing an answer by expecting a 'page not found' error -- 30.69s
+2023-03-19 14:01:49,238 p=26 u=root n=ansible | Remove Apache webserver software --------------------------------------- 10.23s
+2023-03-19 14:01:49,238 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.79s
+2023-03-19 14:01:49,239 p=26 u=root n=ansible | Reset firewall ---------------------------------------------------------- 1.24s
+2023-03-19 14:01:49,239 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.73s
+2023-03-19 14:02:26,234 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:02:26,251 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:02:27,317 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:02:27,617 p=26 u=root n=ansible | PLAY [Remove webserver software] ***********************************************
+2023-03-19 14:02:27,631 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:02:27,632 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:27 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:02:27,632 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:27 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:02:30,131 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:02:30,266 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:02:30,348 p=26 u=root n=ansible | TASK [Remove Apache webserver software] ****************************************
+2023-03-19 14:02:30,348 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:30 +0000 (0:00:02.716)       0:00:02.735 ********** 
+2023-03-19 14:02:30,348 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:30 +0000 (0:00:02.716)       0:00:02.733 ********** 
+2023-03-19 14:02:31,978 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:02:36,299 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:02:36,309 p=26 u=root n=ansible | TASK [Reset firewall] **********************************************************
+2023-03-19 14:02:36,309 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:36 +0000 (0:00:05.961)       0:00:08.696 ********** 
+2023-03-19 14:02:36,310 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:36 +0000 (0:00:05.961)       0:00:08.695 ********** 
+2023-03-19 14:02:37,266 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:02:37,347 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:02:37,399 p=26 u=root n=ansible | PLAY [test webserver removal] **************************************************
+2023-03-19 14:02:37,406 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:02:37,406 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:37 +0000 (0:00:01.096)       0:00:09.793 ********** 
+2023-03-19 14:02:37,407 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:37 +0000 (0:00:01.097)       0:00:09.792 ********** 
+2023-03-19 14:02:38,223 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:02:38,247 p=26 u=root n=ansible | TASK [test if the webserver service is no longer providing an answer by expecting a 'page not found' error] ***
+2023-03-19 14:02:38,248 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:38 +0000 (0:00:00.841)       0:00:10.634 ********** 
+2023-03-19 14:02:38,248 p=26 u=root n=ansible | Sunday 19 March 2023  14:02:38 +0000 (0:00:00.841)       0:00:10.633 ********** 
+2023-03-19 14:03:09,003 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:03:09,041 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:03:09,041 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:03:09,041 p=26 u=root n=ansible | myservera                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:03:09,041 p=26 u=root n=ansible | myserverb                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:03:09,042 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 41 seconds
+2023-03-19 14:03:09,042 p=26 u=root n=ansible | Sunday 19 March 2023  14:03:09 +0000 (0:00:30.794)       0:00:41.429 ********** 
+2023-03-19 14:03:09,043 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:03:09,044 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.80s
+2023-03-19 14:03:09,044 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 5.96s
+2023-03-19 14:03:09,045 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.56s
+2023-03-19 14:03:09,045 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.10s
+2023-03-19 14:03:09,045 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:03:09,046 p=26 u=root n=ansible | total ------------------------------------------------------------------ 41.41s
+2023-03-19 14:03:09,046 p=26 u=root n=ansible | Sunday 19 March 2023  14:03:09 +0000 (0:00:30.797)       0:00:41.431 ********** 
+2023-03-19 14:03:09,046 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:03:09,047 p=26 u=root n=ansible | test if the webserver service is no longer providing an answer by expecting a 'page not found' error -- 30.80s
+2023-03-19 14:03:09,047 p=26 u=root n=ansible | Remove Apache webserver software ---------------------------------------- 5.96s
+2023-03-19 14:03:09,047 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.72s
+2023-03-19 14:03:09,048 p=26 u=root n=ansible | Reset firewall ---------------------------------------------------------- 1.10s
+2023-03-19 14:03:09,048 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.84s
+2023-03-19 14:07:12,651 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:07:12,670 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:07:13,710 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:07:13,999 p=26 u=root n=ansible | PLAY [Install HAProxy on load balancer] ****************************************
+2023-03-19 14:07:14,013 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:07:14,014 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:14 +0000 (0:00:00.019)       0:00:00.019 ********** 
+2023-03-19 14:07:14,014 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:14 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:07:16,729 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:07:16,754 p=26 u=root n=ansible | TASK [Install HAProxy from loadbalancer] ***************************************
+2023-03-19 14:07:16,755 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:16 +0000 (0:00:02.740)       0:00:02.760 ********** 
+2023-03-19 14:07:16,755 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:16 +0000 (0:00:02.741)       0:00:02.759 ********** 
+2023-03-19 14:07:20,497 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:07:20,506 p=26 u=root n=ansible | TASK [Configure HAProxy] *******************************************************
+2023-03-19 14:07:20,506 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:20 +0000 (0:00:03.751)       0:00:06.512 ********** 
+2023-03-19 14:07:20,507 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:20 +0000 (0:00:03.751)       0:00:06.511 ********** 
+2023-03-19 14:07:21,864 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:07:21,874 p=26 u=root n=ansible | TASK [Enable and Start HAProxy service] ****************************************
+2023-03-19 14:07:21,875 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:21 +0000 (0:00:01.368)       0:00:07.880 ********** 
+2023-03-19 14:07:21,875 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:21 +0000 (0:00:01.368)       0:00:07.879 ********** 
+2023-03-19 14:07:23,054 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:07:23,065 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:07:23,065 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:23 +0000 (0:00:01.190)       0:00:09.071 ********** 
+2023-03-19 14:07:23,066 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:23 +0000 (0:00:01.190)       0:00:09.070 ********** 
+2023-03-19 14:07:24,083 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:07:24,111 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:07:24,111 p=26 u=root n=ansible | myserverc                  : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:07:24,112 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 10 seconds
+2023-03-19 14:07:24,112 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:24 +0000 (0:00:01.047)       0:00:10.118 ********** 
+2023-03-19 14:07:24,113 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:07:24,113 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 3.75s
+2023-03-19 14:07:24,113 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 2.74s
+2023-03-19 14:07:24,113 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.37s
+2023-03-19 14:07:24,114 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.19s
+2023-03-19 14:07:24,114 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.05s
+2023-03-19 14:07:24,114 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:07:24,115 p=26 u=root n=ansible | total ------------------------------------------------------------------ 10.10s
+2023-03-19 14:07:24,115 p=26 u=root n=ansible | Sunday 19 March 2023  14:07:24 +0000 (0:00:01.049)       0:00:10.119 ********** 
+2023-03-19 14:07:24,115 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:07:24,116 p=26 u=root n=ansible | Install HAProxy from loadbalancer --------------------------------------- 3.75s
+2023-03-19 14:07:24,116 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.74s
+2023-03-19 14:07:24,117 p=26 u=root n=ansible | Configure HAProxy ------------------------------------------------------- 1.37s
+2023-03-19 14:07:24,117 p=26 u=root n=ansible | Enable and Start HAProxy service ---------------------------------------- 1.19s
+2023-03-19 14:07:24,117 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.05s
+2023-03-19 14:10:46,936 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:10:46,952 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:10:48,382 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:10:48,819 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 14:10:48,840 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:10:48,840 p=26 u=root n=ansible | Sunday 19 March 2023  14:10:48 +0000 (0:00:00.028)       0:00:00.028 ********** 
+2023-03-19 14:10:48,841 p=26 u=root n=ansible | Sunday 19 March 2023  14:10:48 +0000 (0:00:00.026)       0:00:00.026 ********** 
+2023-03-19 14:10:51,316 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:10:51,612 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:10:51,647 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 14:10:51,648 p=26 u=root n=ansible | Sunday 19 March 2023  14:10:51 +0000 (0:00:02.807)       0:00:02.835 ********** 
+2023-03-19 14:10:51,648 p=26 u=root n=ansible | Sunday 19 March 2023  14:10:51 +0000 (0:00:02.807)       0:00:02.833 ********** 
+2023-03-19 14:10:53,252 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "failures": ["No package httpd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2023-03-19 14:11:01,706 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:11:01,714 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 14:11:01,714 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:01 +0000 (0:00:10.066)       0:00:12.902 ********** 
+2023-03-19 14:11:01,715 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:01 +0000 (0:00:10.066)       0:00:12.900 ********** 
+2023-03-19 14:11:02,589 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:11:02,598 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 14:11:02,598 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:02 +0000 (0:00:00.883)       0:00:13.786 ********** 
+2023-03-19 14:11:02,599 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:02 +0000 (0:00:00.883)       0:00:13.784 ********** 
+2023-03-19 14:11:04,371 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:11:04,383 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 14:11:04,383 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:04 +0000 (0:00:01.785)       0:00:15.571 ********** 
+2023-03-19 14:11:04,384 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:04 +0000 (0:00:01.785)       0:00:15.569 ********** 
+2023-03-19 14:11:06,059 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:11:06,068 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:11:06,068 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:06 +0000 (0:00:01.684)       0:00:17.256 ********** 
+2023-03-19 14:11:06,069 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:06 +0000 (0:00:01.684)       0:00:17.254 ********** 
+2023-03-19 14:11:07,042 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:11:07,071 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 14:11:07,078 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:11:07,078 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:07 +0000 (0:00:01.009)       0:00:18.266 ********** 
+2023-03-19 14:11:07,079 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:07 +0000 (0:00:01.009)       0:00:18.264 ********** 
+2023-03-19 14:11:07,805 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:11:07,830 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 14:11:07,831 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:07 +0000 (0:00:00.752)       0:00:19.019 ********** 
+2023-03-19 14:11:07,831 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:07 +0000 (0:00:00.752)       0:00:19.017 ********** 
+2023-03-19 14:11:38,476 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myservera.lenny.local"}
+2023-03-19 14:11:38,478 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:11:38,478 p=26 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:11:38,478 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:11:38,479 p=26 u=root n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:11:38,479 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 49 seconds
+2023-03-19 14:11:38,480 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:38 +0000 (0:00:30.648)       0:00:49.667 ********** 
+2023-03-19 14:11:38,480 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:11:38,481 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.65s
+2023-03-19 14:11:38,481 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 10.07s
+2023-03-19 14:11:38,481 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.56s
+2023-03-19 14:11:38,482 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.79s
+2023-03-19 14:11:38,482 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.68s
+2023-03-19 14:11:38,483 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.01s
+2023-03-19 14:11:38,483 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.88s
+2023-03-19 14:11:38,483 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:11:38,484 p=26 u=root n=ansible | total ------------------------------------------------------------------ 49.64s
+2023-03-19 14:11:38,484 p=26 u=root n=ansible | Sunday 19 March 2023  14:11:38 +0000 (0:00:30.652)       0:00:49.669 ********** 
+2023-03-19 14:11:38,484 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:11:38,485 p=26 u=root n=ansible | test using the URI ----------------------------------------------------- 30.65s
+2023-03-19 14:11:38,485 p=26 u=root n=ansible | Install Apache2 -------------------------------------------------------- 10.07s
+2023-03-19 14:11:38,486 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.81s
+2023-03-19 14:11:38,486 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.79s
+2023-03-19 14:11:38,486 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.68s
+2023-03-19 14:11:38,487 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.01s
+2023-03-19 14:11:38,487 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.88s
+2023-03-19 14:11:38,487 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.75s
+2023-03-19 14:12:39,952 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:12:39,970 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:12:41,029 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:12:41,313 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 14:12:41,327 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:12:41,327 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:41 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:12:41,328 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:41 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:12:43,742 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:12:44,020 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:12:44,055 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 14:12:44,056 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:44 +0000 (0:00:02.728)       0:00:02.747 ********** 
+2023-03-19 14:12:44,056 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:44 +0000 (0:00:02.728)       0:00:02.745 ********** 
+2023-03-19 14:12:45,674 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "failures": ["No package httpd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2023-03-19 14:12:50,050 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:12:50,059 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 14:12:50,059 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:50 +0000 (0:00:06.003)       0:00:08.750 ********** 
+2023-03-19 14:12:50,060 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:50 +0000 (0:00:06.003)       0:00:08.749 ********** 
+2023-03-19 14:12:50,841 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:12:50,849 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 14:12:50,849 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:50 +0000 (0:00:00.789)       0:00:09.540 ********** 
+2023-03-19 14:12:50,850 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:50 +0000 (0:00:00.790)       0:00:09.539 ********** 
+2023-03-19 14:12:52,314 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:12:52,323 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 14:12:52,323 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:52 +0000 (0:00:01.474)       0:00:11.014 ********** 
+2023-03-19 14:12:52,324 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:52 +0000 (0:00:01.474)       0:00:11.013 ********** 
+2023-03-19 14:12:53,390 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:12:53,398 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:12:53,399 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:53 +0000 (0:00:01.075)       0:00:12.090 ********** 
+2023-03-19 14:12:53,399 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:53 +0000 (0:00:01.075)       0:00:12.088 ********** 
+2023-03-19 14:12:54,399 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:12:54,428 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 14:12:54,436 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:12:54,436 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:54 +0000 (0:00:01.037)       0:00:13.127 ********** 
+2023-03-19 14:12:54,437 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:54 +0000 (0:00:01.037)       0:00:13.126 ********** 
+2023-03-19 14:12:55,295 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:12:55,320 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 14:12:55,321 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:55 +0000 (0:00:00.884)       0:00:14.012 ********** 
+2023-03-19 14:12:55,321 p=26 u=root n=ansible | Sunday 19 March 2023  14:12:55 +0000 (0:00:00.884)       0:00:14.011 ********** 
+2023-03-19 14:13:26,072 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myservera.lenny.local"}
+2023-03-19 14:13:26,073 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:13:26,074 p=26 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:13:26,074 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:13:26,074 p=26 u=root n=ansible | myserverb                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:13:26,074 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 44 seconds
+2023-03-19 14:13:26,075 p=26 u=root n=ansible | Sunday 19 March 2023  14:13:26 +0000 (0:00:30.753)       0:00:44.766 ********** 
+2023-03-19 14:13:26,075 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:13:26,076 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.75s
+2023-03-19 14:13:26,076 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 6.00s
+2023-03-19 14:13:26,076 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.61s
+2023-03-19 14:13:26,077 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.47s
+2023-03-19 14:13:26,077 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.08s
+2023-03-19 14:13:26,077 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.04s
+2023-03-19 14:13:26,078 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.79s
+2023-03-19 14:13:26,078 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:13:26,079 p=26 u=root n=ansible | total ------------------------------------------------------------------ 44.75s
+2023-03-19 14:13:26,079 p=26 u=root n=ansible | Sunday 19 March 2023  14:13:26 +0000 (0:00:30.757)       0:00:44.769 ********** 
+2023-03-19 14:13:26,080 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:13:26,080 p=26 u=root n=ansible | test using the URI ----------------------------------------------------- 30.76s
+2023-03-19 14:13:26,080 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 6.00s
+2023-03-19 14:13:26,081 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.73s
+2023-03-19 14:13:26,081 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.47s
+2023-03-19 14:13:26,081 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.08s
+2023-03-19 14:13:26,082 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.04s
+2023-03-19 14:13:26,082 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.88s
+2023-03-19 14:13:26,082 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.79s
+2023-03-19 14:16:37,000 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:16:37,016 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:16:38,053 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:16:38,349 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 14:16:38,363 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:16:38,364 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:38 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:16:38,364 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:38 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:16:40,733 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:16:41,035 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:16:41,071 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 14:16:41,072 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:41 +0000 (0:00:02.708)       0:00:02.726 ********** 
+2023-03-19 14:16:41,072 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:41 +0000 (0:00:02.708)       0:00:02.725 ********** 
+2023-03-19 14:16:42,705 p=26 u=root n=ansible | fatal: [myservera]: FAILED! => {"changed": false, "failures": ["No package httpd available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2023-03-19 14:16:47,047 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:16:47,055 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 14:16:47,056 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:47 +0000 (0:00:05.984)       0:00:08.710 ********** 
+2023-03-19 14:16:47,056 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:47 +0000 (0:00:05.983)       0:00:08.709 ********** 
+2023-03-19 14:16:47,838 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:16:47,847 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 14:16:47,847 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:47 +0000 (0:00:00.791)       0:00:09.502 ********** 
+2023-03-19 14:16:47,848 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:47 +0000 (0:00:00.791)       0:00:09.501 ********** 
+2023-03-19 14:16:49,331 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:16:49,340 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 14:16:49,341 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:49 +0000 (0:00:01.493)       0:00:10.995 ********** 
+2023-03-19 14:16:49,341 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:49 +0000 (0:00:01.493)       0:00:10.994 ********** 
+2023-03-19 14:16:50,393 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:16:50,402 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:16:50,403 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:50 +0000 (0:00:01.062)       0:00:12.057 ********** 
+2023-03-19 14:16:50,403 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:50 +0000 (0:00:01.062)       0:00:12.056 ********** 
+2023-03-19 14:16:51,433 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:16:51,458 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 14:16:51,466 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:16:51,466 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:51 +0000 (0:00:01.063)       0:00:13.121 ********** 
+2023-03-19 14:16:51,467 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:51 +0000 (0:00:01.063)       0:00:13.120 ********** 
+2023-03-19 14:16:52,260 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:16:52,284 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 14:16:52,284 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:52 +0000 (0:00:00.817)       0:00:13.938 ********** 
+2023-03-19 14:16:52,284 p=26 u=root n=ansible | Sunday 19 March 2023  14:16:52 +0000 (0:00:00.817)       0:00:13.937 ********** 
+2023-03-19 14:17:23,049 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myservera.lenny.local"}
+2023-03-19 14:17:23,051 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:17:23,051 p=26 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:17:23,052 p=26 u=root n=ansible | myservera                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:17:23,052 p=26 u=root n=ansible | myserverb                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:17:23,052 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 44 seconds
+2023-03-19 14:17:23,053 p=26 u=root n=ansible | Sunday 19 March 2023  14:17:23 +0000 (0:00:30.768)       0:00:44.707 ********** 
+2023-03-19 14:17:23,053 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:17:23,053 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.77s
+2023-03-19 14:17:23,054 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 5.98s
+2023-03-19 14:17:23,054 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.53s
+2023-03-19 14:17:23,055 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.49s
+2023-03-19 14:17:23,055 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.06s
+2023-03-19 14:17:23,056 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.06s
+2023-03-19 14:17:23,056 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.79s
+2023-03-19 14:17:23,056 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:17:23,057 p=26 u=root n=ansible | total ------------------------------------------------------------------ 44.69s
+2023-03-19 14:17:23,057 p=26 u=root n=ansible | Sunday 19 March 2023  14:17:23 +0000 (0:00:30.772)       0:00:44.710 ********** 
+2023-03-19 14:17:23,058 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:17:23,058 p=26 u=root n=ansible | test using the URI ----------------------------------------------------- 30.77s
+2023-03-19 14:17:23,059 p=26 u=root n=ansible | Install Apache2 --------------------------------------------------------- 5.98s
+2023-03-19 14:17:23,059 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.71s
+2023-03-19 14:17:23,060 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.49s
+2023-03-19 14:17:23,060 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.06s
+2023-03-19 14:17:23,061 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.06s
+2023-03-19 14:17:23,061 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.82s
+2023-03-19 14:17:23,061 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.79s
+2023-03-19 14:22:38,895 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:22:38,910 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:22:39,965 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:22:40,302 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 14:22:40,319 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:22:40,320 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:40 +0000 (0:00:00.023)       0:00:00.023 ********** 
+2023-03-19 14:22:40,320 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:40 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 14:22:42,783 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:22:43,061 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:22:43,097 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 14:22:43,098 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:43 +0000 (0:00:02.777)       0:00:02.801 ********** 
+2023-03-19 14:22:43,098 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:43 +0000 (0:00:02.777)       0:00:02.799 ********** 
+2023-03-19 14:22:49,463 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:22:58,115 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:22:58,124 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 14:22:58,124 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:58 +0000 (0:00:15.026)       0:00:17.827 ********** 
+2023-03-19 14:22:58,125 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:58 +0000 (0:00:15.026)       0:00:17.826 ********** 
+2023-03-19 14:22:58,945 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:22:58,982 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:22:58,993 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 14:22:58,993 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:58 +0000 (0:00:00.868)       0:00:18.696 ********** 
+2023-03-19 14:22:58,994 p=26 u=root n=ansible | Sunday 19 March 2023  14:22:58 +0000 (0:00:00.868)       0:00:18.694 ********** 
+2023-03-19 14:23:00,551 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:23:00,594 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:23:00,602 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 14:23:00,603 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:00 +0000 (0:00:01.609)       0:00:20.306 ********** 
+2023-03-19 14:23:00,603 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:00 +0000 (0:00:01.609)       0:00:20.304 ********** 
+2023-03-19 14:23:01,760 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:23:02,081 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:23:02,091 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:23:02,091 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:02 +0000 (0:00:01.488)       0:00:21.794 ********** 
+2023-03-19 14:23:02,092 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:02 +0000 (0:00:01.488)       0:00:21.792 ********** 
+2023-03-19 14:23:03,076 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:23:03,087 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:23:03,139 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 14:23:03,147 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:23:03,147 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:03 +0000 (0:00:01.055)       0:00:22.850 ********** 
+2023-03-19 14:23:03,148 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:03 +0000 (0:00:01.055)       0:00:22.848 ********** 
+2023-03-19 14:23:03,989 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:23:04,018 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 14:23:04,018 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:04 +0000 (0:00:00.871)       0:00:23.721 ********** 
+2023-03-19 14:23:04,019 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:04 +0000 (0:00:00.871)       0:00:23.720 ********** 
+2023-03-19 14:23:04,732 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:23:04,760 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:23:04,760 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:23:04,760 p=26 u=root n=ansible | myservera                  : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:23:04,760 p=26 u=root n=ansible | myserverb                  : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:23:04,761 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 24 seconds
+2023-03-19 14:23:04,761 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:04 +0000 (0:00:00.742)       0:00:24.464 ********** 
+2023-03-19 14:23:04,761 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:23:04,762 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 15.03s
+2023-03-19 14:23:04,762 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.65s
+2023-03-19 14:23:04,763 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.61s
+2023-03-19 14:23:04,763 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.49s
+2023-03-19 14:23:04,763 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.06s
+2023-03-19 14:23:04,764 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.87s
+2023-03-19 14:23:04,764 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 0.74s
+2023-03-19 14:23:04,764 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:23:04,765 p=26 u=root n=ansible | total ------------------------------------------------------------------ 24.44s
+2023-03-19 14:23:04,765 p=26 u=root n=ansible | Sunday 19 March 2023  14:23:04 +0000 (0:00:00.746)       0:00:24.466 ********** 
+2023-03-19 14:23:04,765 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:23:04,766 p=26 u=root n=ansible | Install Apache2 -------------------------------------------------------- 15.03s
+2023-03-19 14:23:04,766 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.78s
+2023-03-19 14:23:04,766 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.61s
+2023-03-19 14:23:04,767 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.49s
+2023-03-19 14:23:04,767 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.06s
+2023-03-19 14:23:04,767 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.87s
+2023-03-19 14:23:04,768 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.87s
+2023-03-19 14:23:04,768 p=26 u=root n=ansible | test using the URI ------------------------------------------------------ 0.75s
+2023-03-19 14:28:51,600 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:28:51,619 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:28:52,641 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:28:52,865 p=26 u=root n=ansible | ERROR! couldn't resolve module/action 'ansinble.builtin.service'. This often indicates a misspelling, missing collection, or incorrect module path.
+
+The error appears to be in '/home/rmegens/github.com/Ansible-Demos/demo2-playbook/remove_loadbalancer.yaml': line 13, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+    - name: Stop HAProxy service
+      ^ here
+
+2023-03-19 14:31:27,279 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:31:27,296 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:31:28,378 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:31:28,668 p=26 u=root n=ansible | PLAY [Remove HAProxy from load balancer] ***************************************
+2023-03-19 14:31:28,683 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:31:28,683 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:28 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:31:28,683 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:28 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:31:31,033 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:31:31,060 p=26 u=root n=ansible | TASK [Stop HAProxy service] ****************************************************
+2023-03-19 14:31:31,060 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:31 +0000 (0:00:02.377)       0:00:02.396 ********** 
+2023-03-19 14:31:31,061 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:31 +0000 (0:00:02.377)       0:00:02.395 ********** 
+2023-03-19 14:31:32,109 p=26 u=root n=ansible | changed: [myserverc]
+2023-03-19 14:31:32,118 p=26 u=root n=ansible | TASK [Reset firewall] **********************************************************
+2023-03-19 14:31:32,119 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:32 +0000 (0:00:01.058)       0:00:03.454 ********** 
+2023-03-19 14:31:32,119 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:32 +0000 (0:00:01.058)       0:00:03.453 ********** 
+2023-03-19 14:31:33,102 p=26 u=root n=ansible | changed: [myserverc]
+2023-03-19 14:31:33,112 p=26 u=root n=ansible | TASK [De-install HAProxy from loadbalancer] ************************************
+2023-03-19 14:31:33,113 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:33 +0000 (0:00:00.994)       0:00:04.448 ********** 
+2023-03-19 14:31:33,113 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:33 +0000 (0:00:00.994)       0:00:04.447 ********** 
+2023-03-19 14:31:36,727 p=26 u=root n=ansible | changed: [myserverc]
+2023-03-19 14:31:36,759 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:31:36,760 p=26 u=root n=ansible | myserverc                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:31:36,761 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 8 seconds
+2023-03-19 14:31:36,761 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:36 +0000 (0:00:03.648)       0:00:08.096 ********** 
+2023-03-19 14:31:36,762 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:31:36,762 p=26 u=root n=ansible | ansible.builtin.yum ----------------------------------------------------- 3.65s
+2023-03-19 14:31:36,763 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 2.38s
+2023-03-19 14:31:36,763 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.06s
+2023-03-19 14:31:36,763 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 0.99s
+2023-03-19 14:31:36,764 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:31:36,764 p=26 u=root n=ansible | total ------------------------------------------------------------------- 8.08s
+2023-03-19 14:31:36,765 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:36 +0000 (0:00:03.651)       0:00:08.098 ********** 
+2023-03-19 14:31:36,765 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:31:36,765 p=26 u=root n=ansible | De-install HAProxy from loadbalancer ------------------------------------ 3.65s
+2023-03-19 14:31:36,766 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.38s
+2023-03-19 14:31:36,766 p=26 u=root n=ansible | Stop HAProxy service ---------------------------------------------------- 1.06s
+2023-03-19 14:31:36,766 p=26 u=root n=ansible | Reset firewall ---------------------------------------------------------- 0.99s
+2023-03-19 14:31:36,774 p=26 u=root n=ansible | PLAY [Remove webserver software] ***********************************************
+2023-03-19 14:31:36,784 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:31:36,784 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:36 +0000 (0:00:00.023)       0:00:08.120 ********** 
+2023-03-19 14:31:36,785 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:36 +0000 (0:00:00.020)       0:00:08.118 ********** 
+2023-03-19 14:31:39,025 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:31:39,639 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:31:39,673 p=26 u=root n=ansible | TASK [Remove Apache webserver software] ****************************************
+2023-03-19 14:31:39,674 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:39 +0000 (0:00:02.889)       0:00:11.009 ********** 
+2023-03-19 14:31:39,674 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:39 +0000 (0:00:02.889)       0:00:11.008 ********** 
+2023-03-19 14:31:50,169 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:31:50,409 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:31:50,422 p=26 u=root n=ansible | TASK [Reset firewall] **********************************************************
+2023-03-19 14:31:50,422 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:50 +0000 (0:00:10.748)       0:00:21.758 ********** 
+2023-03-19 14:31:50,423 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:50 +0000 (0:00:10.748)       0:00:21.757 ********** 
+2023-03-19 14:31:51,434 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:31:51,561 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:31:51,617 p=26 u=root n=ansible | PLAY [test webserver removal] **************************************************
+2023-03-19 14:31:51,624 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:31:51,625 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:51 +0000 (0:00:01.202)       0:00:22.960 ********** 
+2023-03-19 14:31:51,625 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:51 +0000 (0:00:01.202)       0:00:22.959 ********** 
+2023-03-19 14:31:52,400 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:31:52,428 p=26 u=root n=ansible | TASK [test if the webserver service is no longer providing an answer by a status code of -1] ***
+2023-03-19 14:31:52,428 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:52 +0000 (0:00:00.803)       0:00:23.763 ********** 
+2023-03-19 14:31:52,428 p=26 u=root n=ansible | Sunday 19 March 2023  14:31:52 +0000 (0:00:00.802)       0:00:23.762 ********** 
+2023-03-19 14:32:23,215 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:32:23,243 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:32:23,244 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:32:23,244 p=26 u=root n=ansible | myservera                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:32:23,244 p=26 u=root n=ansible | myserverb                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:32:23,244 p=26 u=root n=ansible | myserverc                  : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:32:23,244 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 54 seconds
+2023-03-19 14:32:23,245 p=26 u=root n=ansible | Sunday 19 March 2023  14:32:23 +0000 (0:00:30.816)       0:00:54.580 ********** 
+2023-03-19 14:32:23,245 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:32:23,246 p=26 u=root n=ansible | ansible.builtin.yum -------------------------------------------------- 1679236307.53s
+2023-03-19 14:32:23,246 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 30.82s
+2023-03-19 14:32:23,246 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 6.07s
+2023-03-19 14:32:23,247 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 2.20s
+2023-03-19 14:32:23,247 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.06s
+2023-03-19 14:32:23,247 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:32:23,248 p=26 u=root n=ansible | total ---------------------------------------------------------------- 1679236347.67s
+2023-03-19 14:32:23,248 p=26 u=root n=ansible | Sunday 19 March 2023  14:32:23 +0000 (0:00:30.819)       0:00:54.582 ********** 
+2023-03-19 14:32:23,248 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:32:23,249 p=26 u=root n=ansible | test if the webserver service is no longer providing an answer by a status code of -1 -- 30.82s
+2023-03-19 14:32:23,249 p=26 u=root n=ansible | Remove Apache webserver software --------------------------------------- 10.75s
+2023-03-19 14:32:23,249 p=26 u=root n=ansible | De-install HAProxy from loadbalancer ------------------------------------ 3.65s
+2023-03-19 14:32:23,250 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.89s
+2023-03-19 14:32:23,250 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.38s
+2023-03-19 14:32:23,251 p=26 u=root n=ansible | Reset firewall ---------------------------------------------------------- 1.20s
+2023-03-19 14:32:23,251 p=26 u=root n=ansible | Stop HAProxy service ---------------------------------------------------- 1.06s
+2023-03-19 14:32:23,251 p=26 u=root n=ansible | Reset firewall ---------------------------------------------------------- 0.99s
+2023-03-19 14:32:23,252 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.80s
+2023-03-19 14:38:21,910 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:38:21,926 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:38:22,917 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:38:23,179 p=26 u=root n=ansible | playbook: /home/rmegens/github.com/Ansible-Demos/demo2-playbook/test_webcluster.yml
+2023-03-19 14:38:45,580 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:38:45,598 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:38:46,616 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:38:46,894 p=26 u=root n=ansible | PLAY [Test web cluster with load balancer and webservers] **********************
+2023-03-19 14:38:46,907 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:38:46,908 p=26 u=root n=ansible | Sunday 19 March 2023  14:38:46 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:38:46,908 p=26 u=root n=ansible | Sunday 19 March 2023  14:38:46 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:38:48,018 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:38:48,043 p=26 u=root n=ansible | TASK [Test access via load balancer] *******************************************
+2023-03-19 14:38:48,044 p=26 u=root n=ansible | Sunday 19 March 2023  14:38:48 +0000 (0:00:01.135)       0:00:01.154 ********** 
+2023-03-19 14:38:48,044 p=26 u=root n=ansible | Sunday 19 March 2023  14:38:48 +0000 (0:00:01.135)       0:00:01.153 ********** 
+2023-03-19 14:39:18,769 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myserverc.lenny.local"}
+2023-03-19 14:39:18,769 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:39:18,779 p=26 u=root n=ansible | TASK [Test webservera] *********************************************************
+2023-03-19 14:39:18,779 p=26 u=root n=ansible | Sunday 19 March 2023  14:39:18 +0000 (0:00:30.735)       0:00:31.890 ********** 
+2023-03-19 14:39:18,780 p=26 u=root n=ansible | Sunday 19 March 2023  14:39:18 +0000 (0:00:30.735)       0:00:31.888 ********** 
+2023-03-19 14:39:49,356 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myservera.lenny.local"}
+2023-03-19 14:39:49,357 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:39:49,366 p=26 u=root n=ansible | TASK [Test webserverb] *********************************************************
+2023-03-19 14:39:49,367 p=26 u=root n=ansible | Sunday 19 March 2023  14:39:49 +0000 (0:00:30.587)       0:01:02.477 ********** 
+2023-03-19 14:39:49,368 p=26 u=root n=ansible | Sunday 19 March 2023  14:39:49 +0000 (0:00:30.587)       0:01:02.476 ********** 
+2023-03-19 14:40:19,957 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myserverb.lenny.local"}
+2023-03-19 14:40:19,957 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:40:19,988 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:40:19,988 p=26 u=root n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=3   
+2023-03-19 14:40:19,988 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 1 minutes, 33 seconds
+2023-03-19 14:40:19,989 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:19 +0000 (0:00:30.622)       0:01:33.099 ********** 
+2023-03-19 14:40:19,989 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:40:19,989 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 91.94s
+2023-03-19 14:40:19,990 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 1.14s
+2023-03-19 14:40:19,990 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:40:19,990 p=26 u=root n=ansible | total ------------------------------------------------------------------ 93.08s
+2023-03-19 14:40:19,991 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:19 +0000 (0:00:30.623)       0:01:33.099 ********** 
+2023-03-19 14:40:19,991 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:40:19,991 p=26 u=root n=ansible | Test access via load balancer ------------------------------------------ 30.74s
+2023-03-19 14:40:19,992 p=26 u=root n=ansible | Test webserverb -------------------------------------------------------- 30.62s
+2023-03-19 14:40:19,992 p=26 u=root n=ansible | Test webservera -------------------------------------------------------- 30.59s
+2023-03-19 14:40:19,992 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 1.14s
+2023-03-19 14:40:50,770 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:40:50,787 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:40:51,877 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:40:52,178 p=26 u=root n=ansible | PLAY [Test web cluster with load balancer and webservers] **********************
+2023-03-19 14:40:52,194 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:40:52,194 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:52 +0000 (0:00:00.020)       0:00:00.020 ********** 
+2023-03-19 14:40:52,195 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:52 +0000 (0:00:00.019)       0:00:00.019 ********** 
+2023-03-19 14:40:53,225 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:40:53,266 p=26 u=root n=ansible | TASK [Test access via load balancer] *******************************************
+2023-03-19 14:40:53,268 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:53 +0000 (0:00:01.073)       0:00:01.094 ********** 
+2023-03-19 14:40:53,271 p=26 u=root n=ansible | Sunday 19 March 2023  14:40:53 +0000 (0:00:01.074)       0:00:01.094 ********** 
+2023-03-19 14:41:24,005 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myserverc.lenny.local"}
+2023-03-19 14:41:24,006 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:41:24,015 p=26 u=root n=ansible | TASK [Test webservera] *********************************************************
+2023-03-19 14:41:24,015 p=26 u=root n=ansible | Sunday 19 March 2023  14:41:24 +0000 (0:00:30.747)       0:00:31.841 ********** 
+2023-03-19 14:41:24,016 p=26 u=root n=ansible | Sunday 19 March 2023  14:41:24 +0000 (0:00:30.746)       0:00:31.840 ********** 
+2023-03-19 14:41:54,647 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myservera.lenny.local"}
+2023-03-19 14:41:54,648 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:41:54,660 p=26 u=root n=ansible | TASK [Test webserverb] *********************************************************
+2023-03-19 14:41:54,661 p=26 u=root n=ansible | Sunday 19 March 2023  14:41:54 +0000 (0:00:30.645)       0:01:02.487 ********** 
+2023-03-19 14:41:54,662 p=26 u=root n=ansible | Sunday 19 March 2023  14:41:54 +0000 (0:00:30.645)       0:01:02.486 ********** 
+2023-03-19 14:42:25,277 p=26 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "content": "", "elapsed": 30, "msg": "Status code was -1 and not [200]: Request failed: <urlopen error timed out>", "redirected": false, "status": -1, "url": "http://myserverb.lenny.local"}
+2023-03-19 14:42:25,278 p=26 u=root n=ansible | ...ignoring
+2023-03-19 14:42:25,309 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:42:25,309 p=26 u=root n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=3   
+2023-03-19 14:42:25,310 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 1 minutes, 33 seconds
+2023-03-19 14:42:25,310 p=26 u=root n=ansible | Sunday 19 March 2023  14:42:25 +0000 (0:00:30.649)       0:01:33.136 ********** 
+2023-03-19 14:42:25,311 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:42:25,311 p=26 u=root n=ansible | ansible.builtin.uri ---------------------------------------------------- 92.04s
+2023-03-19 14:42:25,311 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 1.07s
+2023-03-19 14:42:25,312 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:42:25,312 p=26 u=root n=ansible | total ------------------------------------------------------------------ 93.12s
+2023-03-19 14:42:25,312 p=26 u=root n=ansible | Sunday 19 March 2023  14:42:25 +0000 (0:00:30.650)       0:01:33.137 ********** 
+2023-03-19 14:42:25,313 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:42:25,313 p=26 u=root n=ansible | Test access via load balancer ------------------------------------------ 30.74s
+2023-03-19 14:42:25,313 p=26 u=root n=ansible | Test webserverb -------------------------------------------------------- 30.65s
+2023-03-19 14:42:25,314 p=26 u=root n=ansible | Test webservera -------------------------------------------------------- 30.65s
+2023-03-19 14:42:25,314 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 1.08s
+2023-03-19 14:43:56,097 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:43:56,113 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 14:43:57,112 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 14:43:57,396 p=26 u=root n=ansible | PLAY [Install a webserver] *****************************************************
+2023-03-19 14:43:57,410 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:43:57,410 p=26 u=root n=ansible | Sunday 19 March 2023  14:43:57 +0000 (0:00:00.018)       0:00:00.018 ********** 
+2023-03-19 14:43:57,411 p=26 u=root n=ansible | Sunday 19 March 2023  14:43:57 +0000 (0:00:00.017)       0:00:00.017 ********** 
+2023-03-19 14:43:59,833 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:44:00,108 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:44:00,143 p=26 u=root n=ansible | TASK [Install Apache2] *********************************************************
+2023-03-19 14:44:00,144 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:00 +0000 (0:00:02.733)       0:00:02.752 ********** 
+2023-03-19 14:44:00,144 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:00 +0000 (0:00:02.733)       0:00:02.750 ********** 
+2023-03-19 14:44:10,603 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:44:11,251 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:44:11,260 p=26 u=root n=ansible | TASK [Create document root folder if not exist] ********************************
+2023-03-19 14:44:11,261 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:11 +0000 (0:00:11.117)       0:00:13.869 ********** 
+2023-03-19 14:44:11,261 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:11 +0000 (0:00:11.117)       0:00:13.867 ********** 
+2023-03-19 14:44:12,071 p=26 u=root n=ansible | ok: [myservera]
+2023-03-19 14:44:12,083 p=26 u=root n=ansible | ok: [myserverb]
+2023-03-19 14:44:12,092 p=26 u=root n=ansible | TASK [Copy index page] *********************************************************
+2023-03-19 14:44:12,093 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:12 +0000 (0:00:00.831)       0:00:14.701 ********** 
+2023-03-19 14:44:12,093 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:12 +0000 (0:00:00.832)       0:00:14.700 ********** 
+2023-03-19 14:44:13,564 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:44:13,577 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:44:13,586 p=26 u=root n=ansible | TASK [Enable and Start Service] ************************************************
+2023-03-19 14:44:13,586 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:13 +0000 (0:00:01.493)       0:00:16.194 ********** 
+2023-03-19 14:44:13,586 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:13 +0000 (0:00:01.493)       0:00:16.193 ********** 
+2023-03-19 14:44:15,072 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:44:15,206 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:44:15,214 p=26 u=root n=ansible | TASK [Configure firewall] ******************************************************
+2023-03-19 14:44:15,215 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:15 +0000 (0:00:01.628)       0:00:17.823 ********** 
+2023-03-19 14:44:15,215 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:15 +0000 (0:00:01.628)       0:00:17.822 ********** 
+2023-03-19 14:44:16,227 p=26 u=root n=ansible | changed: [myservera]
+2023-03-19 14:44:16,247 p=26 u=root n=ansible | changed: [myserverb]
+2023-03-19 14:44:16,299 p=26 u=root n=ansible | PLAY [test the webserver] ******************************************************
+2023-03-19 14:44:16,305 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:44:16,306 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:16 +0000 (0:00:01.091)       0:00:18.914 ********** 
+2023-03-19 14:44:16,306 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:16 +0000 (0:00:01.091)       0:00:18.913 ********** 
+2023-03-19 14:44:17,014 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:44:17,041 p=26 u=root n=ansible | TASK [test using the URI] ******************************************************
+2023-03-19 14:44:17,042 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.736)       0:00:19.650 ********** 
+2023-03-19 14:44:17,043 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.736)       0:00:19.649 ********** 
+2023-03-19 14:44:17,723 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 14:44:17,752 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:44:17,752 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:17,752 p=26 u=root n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:17,752 p=26 u=root n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:17,753 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 20 seconds
+2023-03-19 14:44:17,753 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.711)       0:00:20.361 ********** 
+2023-03-19 14:44:17,753 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:44:17,754 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 11.12s
+2023-03-19 14:44:17,754 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 3.47s
+2023-03-19 14:44:17,754 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.63s
+2023-03-19 14:44:17,755 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.49s
+2023-03-19 14:44:17,755 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.09s
+2023-03-19 14:44:17,756 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.83s
+2023-03-19 14:44:17,756 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 0.71s
+2023-03-19 14:44:17,756 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:44:17,757 p=26 u=root n=ansible | total ------------------------------------------------------------------ 20.34s
+2023-03-19 14:44:17,757 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.714)       0:00:20.363 ********** 
+2023-03-19 14:44:17,758 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:44:17,758 p=26 u=root n=ansible | Install Apache2 -------------------------------------------------------- 11.12s
+2023-03-19 14:44:17,759 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.73s
+2023-03-19 14:44:17,759 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.63s
+2023-03-19 14:44:17,760 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.49s
+2023-03-19 14:44:17,760 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.09s
+2023-03-19 14:44:17,761 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.83s
+2023-03-19 14:44:17,761 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.74s
+2023-03-19 14:44:17,761 p=26 u=root n=ansible | test using the URI ------------------------------------------------------ 0.72s
+2023-03-19 14:44:17,769 p=26 u=root n=ansible | PLAY [Install HAProxy on load balancer] ****************************************
+2023-03-19 14:44:17,776 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 14:44:17,777 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.023)       0:00:20.384 ********** 
+2023-03-19 14:44:17,777 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:17 +0000 (0:00:00.019)       0:00:20.383 ********** 
+2023-03-19 14:44:19,741 p=26 u=root n=ansible | ok: [myserverc]
+2023-03-19 14:44:19,763 p=26 u=root n=ansible | TASK [Install HAProxy from loadbalancer] ***************************************
+2023-03-19 14:44:19,763 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:19 +0000 (0:00:01.986)       0:00:22.371 ********** 
+2023-03-19 14:44:19,764 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:19 +0000 (0:00:01.987)       0:00:22.370 ********** 
+2023-03-19 14:44:21,057 p=26 u=root n=ansible | fatal: [myserverc]: FAILED! => {"changed": false, "failures": ["No package haproxy available."], "msg": "Failed to install some of the specified packages", "rc": 1, "results": []}
+2023-03-19 14:44:21,058 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 14:44:21,058 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:21,058 p=26 u=root n=ansible | myservera                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:21,059 p=26 u=root n=ansible | myserverb                  : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:21,059 p=26 u=root n=ansible | myserverc                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 14:44:21,059 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 23 seconds
+2023-03-19 14:44:21,059 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:21 +0000 (0:00:01.295)       0:00:23.667 ********** 
+2023-03-19 14:44:21,060 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:44:21,060 p=26 u=root n=ansible | ansible.builtin.uri -------------------------------------------------- 1679237057.78s
+2023-03-19 14:44:21,060 p=26 u=root n=ansible | ansible.builtin.yum ---------------------------------------------------- 12.41s
+2023-03-19 14:44:21,061 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 5.46s
+2023-03-19 14:44:21,061 p=26 u=root n=ansible | ansible.builtin.service ------------------------------------------------- 1.63s
+2023-03-19 14:44:21,061 p=26 u=root n=ansible | ansible.builtin.template ------------------------------------------------ 1.49s
+2023-03-19 14:44:21,062 p=26 u=root n=ansible | ansible.posix.firewalld ------------------------------------------------- 1.09s
+2023-03-19 14:44:21,062 p=26 u=root n=ansible | ansible.builtin.file ---------------------------------------------------- 0.83s
+2023-03-19 14:44:21,062 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 14:44:21,063 p=26 u=root n=ansible | total ---------------------------------------------------------------- 1679237080.69s
+2023-03-19 14:44:21,063 p=26 u=root n=ansible | Sunday 19 March 2023  14:44:21 +0000 (0:00:01.299)       0:00:23.669 ********** 
+2023-03-19 14:44:21,063 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 14:44:21,064 p=26 u=root n=ansible | Install Apache2 -------------------------------------------------------- 11.12s
+2023-03-19 14:44:21,064 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 2.73s
+2023-03-19 14:44:21,064 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 1.99s
+2023-03-19 14:44:21,065 p=26 u=root n=ansible | Enable and Start Service ------------------------------------------------ 1.63s
+2023-03-19 14:44:21,065 p=26 u=root n=ansible | Copy index page --------------------------------------------------------- 1.49s
+2023-03-19 14:44:21,065 p=26 u=root n=ansible | Install HAProxy from loadbalancer --------------------------------------- 1.30s
+2023-03-19 14:44:21,066 p=26 u=root n=ansible | Configure firewall ------------------------------------------------------ 1.09s
+2023-03-19 14:44:21,066 p=26 u=root n=ansible | Create document root folder if not exist -------------------------------- 0.83s
+2023-03-19 14:44:21,066 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 0.74s
+2023-03-19 14:44:21,067 p=26 u=root n=ansible | test using the URI ------------------------------------------------------ 0.72s
+2023-03-19 21:36:42,966 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:36:43,049 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:36:44,028 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:36:44,304 p=26 u=root n=ansible | PLAY [Function Test of webserver] **********************************************
+2023-03-19 21:36:44,322 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 21:36:44,323 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:44 +0000 (0:00:00.023)       0:00:00.023 ********** 
+2023-03-19 21:36:44,323 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:44 +0000 (0:00:00.021)       0:00:00.021 ********** 
+2023-03-19 21:36:45,593 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 21:36:45,615 p=26 u=root n=ansible | TASK [Tested that webserver is reachable and returns the correct status_code] ***
+2023-03-19 21:36:45,615 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:45 +0000 (0:00:01.292)       0:00:01.316 ********** 
+2023-03-19 21:36:45,616 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:45 +0000 (0:00:01.292)       0:00:01.314 ********** 
+2023-03-19 21:36:46,257 p=26 u=root n=ansible | failed: [localhost] (item=myservera.lenny.local) => {"ansible_loop_var": "item", "changed": false, "item": "myservera.lenny.local", "msg": "unknown url type: 'myservera.lenny.local'", "status": -1, "url": "myservera.lenny.local"}
+2023-03-19 21:36:46,706 p=26 u=root n=ansible | failed: [localhost] (item=myserverb.lenny.local) => {"ansible_loop_var": "item", "changed": false, "item": "myserverb.lenny.local", "msg": "unknown url type: 'myserverb.lenny.local'", "status": -1, "url": "myserverb.lenny.local"}
+2023-03-19 21:36:46,713 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 21:36:46,713 p=26 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-03-19 21:36:46,714 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2023-03-19 21:36:46,714 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:46 +0000 (0:00:01.098)       0:00:02.414 ********** 
+2023-03-19 21:36:46,714 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 21:36:46,715 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 1.29s
+2023-03-19 21:36:46,715 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 1.10s
+2023-03-19 21:36:46,715 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 21:36:46,716 p=26 u=root n=ansible | total ------------------------------------------------------------------- 2.39s
+2023-03-19 21:36:46,716 p=26 u=root n=ansible | Sunday 19 March 2023  21:36:46 +0000 (0:00:01.100)       0:00:02.414 ********** 
+2023-03-19 21:36:46,716 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 21:36:46,717 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 1.29s
+2023-03-19 21:36:46,717 p=26 u=root n=ansible | Tested that webserver is reachable and returns the correct status_code --- 1.10s
+2023-03-19 21:38:10,498 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:38:10,514 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:38:11,409 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:38:11,650 p=26 u=root n=ansible | PLAY [Function Test of webserver] **********************************************
+2023-03-19 21:38:11,662 p=26 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2023-03-19 21:38:11,662 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:11 +0000 (0:00:00.015)       0:00:00.015 ********** 
+2023-03-19 21:38:11,663 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:11 +0000 (0:00:00.014)       0:00:00.014 ********** 
+2023-03-19 21:38:12,658 p=26 u=root n=ansible | ok: [localhost]
+2023-03-19 21:38:12,680 p=26 u=root n=ansible | TASK [Tested that webserver is reachable and returns the correct status_code] ***
+2023-03-19 21:38:12,680 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:12 +0000 (0:00:01.018)       0:00:01.034 ********** 
+2023-03-19 21:38:12,681 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:12 +0000 (0:00:01.018)       0:00:01.032 ********** 
+2023-03-19 21:38:13,414 p=26 u=root n=ansible | ok: [localhost] => (item=myservera.lenny.local)
+2023-03-19 21:38:13,980 p=26 u=root n=ansible | ok: [localhost] => (item=myserverb.lenny.local)
+2023-03-19 21:38:14,008 p=26 u=root n=ansible | PLAY RECAP *********************************************************************
+2023-03-19 21:38:14,009 p=26 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-03-19 21:38:14,009 p=26 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 2 seconds
+2023-03-19 21:38:14,009 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:14 +0000 (0:00:01.328)       0:00:02.362 ********** 
+2023-03-19 21:38:14,010 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 21:38:14,010 p=26 u=root n=ansible | ansible.builtin.uri ----------------------------------------------------- 1.33s
+2023-03-19 21:38:14,010 p=26 u=root n=ansible | gather_facts ------------------------------------------------------------ 1.02s
+2023-03-19 21:38:14,010 p=26 u=root n=ansible | ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+2023-03-19 21:38:14,011 p=26 u=root n=ansible | total ------------------------------------------------------------------- 2.35s
+2023-03-19 21:38:14,011 p=26 u=root n=ansible | Sunday 19 March 2023  21:38:14 +0000 (0:00:01.330)       0:00:02.363 ********** 
+2023-03-19 21:38:14,011 p=26 u=root n=ansible | =============================================================================== 
+2023-03-19 21:38:14,012 p=26 u=root n=ansible | Tested that webserver is reachable and returns the correct status_code --- 1.33s
+2023-03-19 21:38:14,012 p=26 u=root n=ansible | Gathering Facts --------------------------------------------------------- 1.02s
+2023-03-19 21:47:44,913 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:47:44,930 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:47:46,129 p=29 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:48:42,840 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:48:42,856 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:48:44,056 p=26 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:48:44,118 p=26 u=root n=ansible | [WARNING]: libvirt was not found
+
+2023-03-19 21:48:44,119 p=26 u=root n=ansible | {}
+2023-03-19 21:49:21,742 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:49:21,757 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:49:22,893 p=29 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 22:50:09,040 p=1604692 u=rmegens n=ansible | # /usr/share/ansible/collections/ansible_collections
+Collection               Version
+------------------------ -------
+
+2023-03-19 22:50:09,040 p=1604692 u=rmegens n=ansible | ansible.posix            1.4.0  
+2023-03-19 22:50:09,040 p=1604692 u=rmegens n=ansible | community.general        3.8.9  
+2023-03-19 22:50:09,040 p=1604692 u=rmegens n=ansible | microsoft.sql            1.2.4  
+2023-03-19 22:50:09,041 p=1604692 u=rmegens n=ansible | redhat.rhel_mgmt         1.1.0  
+2023-03-19 22:50:09,041 p=1604692 u=rmegens n=ansible | redhat.rhel_system_roles 1.20.1 
+2023-03-19 22:51:07,223 p=1605058 u=rmegens n=ansible | Starting galaxy collection install process
+2023-03-19 22:51:07,224 p=1605058 u=rmegens n=ansible | Process install dependency map
+2023-03-19 22:51:07,224 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:07,326 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:07,427 p=1605058 u=rmegens n=ansible | -
+2023-03-19 22:51:07,528 p=1605058 u=rmegens n=ansible | \
+2023-03-19 22:51:07,629 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:07,731 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:07,832 p=1605058 u=rmegens n=ansible | -
+2023-03-19 22:51:07,933 p=1605058 u=rmegens n=ansible | \
+2023-03-19 22:51:08,035 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:08,136 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:08,237 p=1605058 u=rmegens n=ansible | -
+2023-03-19 22:51:08,338 p=1605058 u=rmegens n=ansible | \
+2023-03-19 22:51:08,439 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:08,541 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:08,643 p=1605058 u=rmegens n=ansible | Starting collection install process
+2023-03-19 22:51:08,645 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:08,746 p=1605058 u=rmegens n=ansible | Installing 'community.libvirt:1.2.0' to '/home/rmegens/.ansible/collections/ansible_collections/community/libvirt'
+2023-03-19 22:51:08,747 p=1605058 u=rmegens n=ansible | Downloading https://galaxy.ansible.com/download/community-libvirt-1.2.0.tar.gz to /home/rmegens/.ansible/tmp/ansible-local-1605058sts400uo/tmp48eeyvsp
+2023-03-19 22:51:08,747 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:08,848 p=1605058 u=rmegens n=ansible | -
+2023-03-19 22:51:08,949 p=1605058 u=rmegens n=ansible | \
+2023-03-19 22:51:09,050 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:09,151 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:09,252 p=1605058 u=rmegens n=ansible | -
+2023-03-19 22:51:09,353 p=1605058 u=rmegens n=ansible | \
+2023-03-19 22:51:09,453 p=1605058 u=rmegens n=ansible | |
+2023-03-19 22:51:09,554 p=1605058 u=rmegens n=ansible | /
+2023-03-19 22:51:09,655 p=1605058 u=rmegens n=ansible | community.libvirt (1.2.0) was installed successfully
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | # /usr/share/ansible/collections/ansible_collections
+Collection               Version
+------------------------ -------
+
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | ansible.posix            1.4.0  
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | community.general        3.8.9  
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | microsoft.sql            1.2.4  
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | redhat.rhel_mgmt         1.1.0  
+2023-03-19 22:51:14,620 p=1605241 u=rmegens n=ansible | redhat.rhel_system_roles 1.20.1 
+2023-03-19 22:51:14,621 p=1605241 u=rmegens n=ansible | # /home/rmegens/.ansible/collections/ansible_collections
+Collection        Version
+----------------- -------
+
+2023-03-19 22:51:14,621 p=1605241 u=rmegens n=ansible | community.libvirt 1.2.0  
+2023-03-19 21:51:31,704 p=21 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.
+2023-03-19 21:51:31,718 p=21 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"arista.eos": {"version": "6.0.0"}, "splunk.es": {"version": "2.1.0"}, "cloud.common": {"version": "2.1.2"}, "vmware.vmware_rest": {"version": "2.2.0"}, "cisco.iosxr": {"version": "4.0.2"}, "cisco.nxos": {"version": "4.0.0"}, "cisco.asa": {"version": "4.0.0"}, "cisco.ios": {"version": "4.1.0"}, "servicenow.itsm": {"version": "1.3.3"}, "redhat.rhv": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.2.0"}, "redhat.satellite": {"version": "3.3.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "4.0.0"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "ansible.windows": {"version": "1.12.0"}, "ansible.utils": {"version": "2.7.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.netcommon": {"version": "4.1.0"}, "ansible.yang": {"version": "1.0.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.snmp": {"version": "1.0.1"}, "ansible.controller": {"version": "4.3.0"}, "amazon.aws": {"version": "5.1.0"}, "kubernetes.core": {"version": "2.3.2"}, "ibm.qradar": {"version": "2.1.0"}, "frr.frr": {"version": "2.0.0"}, "vyos.vyos": {"version": "4.0.0"}}}
+2023-03-19 21:51:32,826 p=29 u=root n=ansible | [DEPRECATION WARNING]: [defaults]callback_whitelist option, normalizing names 
+to new standard, use callbacks_enabled instead. This feature will be removed 
+from ansible-core in version 2.15. Deprecation warnings can be disabled by 
+setting deprecation_warnings=False in ansible.cfg.

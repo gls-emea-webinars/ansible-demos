@@ -1,7 +1,7 @@
-myservera.lenny.local
-myserverb.lenny.local
-myserverc.lenny.local
-
+myservera
+myserverb
+bvmservere
+bvmserverf
 
 [webservers]
 myservera
@@ -9,4 +9,4 @@ myserverb
 
 
 [loadbalancers]
-myserverc
+bvmservere

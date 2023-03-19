@@ -1,0 +1,19 @@
+---
+- name: Function Test of webserver
+  hosts: localhost
+  become: false
+
+  vars:
+    webservers:
+      - myservera.lenny.local
+      - myserverb.lenny.local
+
+  tasks:
+    - name: Tested that webserver is reachable and returns the correct status_code
+      ansible.builtin.uri:
+        url: http://{{ item }}
+        return_content: yes
+        status_code: 200
+      loop: "{{ webservers }}"
+        
+      

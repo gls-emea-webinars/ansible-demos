@@ -1,6 +1,7 @@
 ---
 - name: Install a webserver
   hosts: webservers
+  become: true
 
   vars:
     pkgname: httpd
@@ -10,37 +11,36 @@
     webpage_name: Ansible Tech Demo Webinar
 
   tasks:
-    - name: Install Apache2
-      yum:
+    - name: Apache2 installed on webservers
+      ansible.builtin.yum:
         name: "{{ pkgname }}"
         state: latest
 
-    - name: Create document root folder if not exist
-      file:
+    - name: Created document root folder if not exist
+      ansible.builtin.file:
         path: "{{ indexloc }}"
         state: directory
         owner: apache
         group: apache
         mode: 0755
 
-    - name: Copy index page
-      template:
+    - name: index page Copied to document root 
+      ansible.builtin.template:
         src: better_index.html
         dest: "{{ indexloc }}/index.html"
         owner: apache
         group: apache
         mode: 0755
     
-    - name: Enable and Start Service
-      service:
+    - name: Web Service Enabled and Started 
+      ansible.builtin.service:
         name: httpd
         state: started
         enabled: true
 
-    - name: Configure firewall
-      firewalld:
+    - name: Firewalld Configured 
+      ansible.posix.firewalld:
         service: http
         permanent: true
         state: enabled
         immediate: true
-

@@ -10,17 +10,23 @@
 
   tasks:
     - name: Remove Apache webserver software
-      yum:
+      ansible.builtin.yum:
         name: "{{ pkgname }}"
         state: absent
 
-    # - name: Remove DocumentRoot folder
-    #   file:
-    #     path: "{{ indexloc }}"
-    #     state: absent
 
     - name: Reset firewall
-      firewalld:
+      ansible.posix.firewalld:
         service: "{{ pkgport }}"
         state: disabled
         immediate: true
+
+- name: test webserver removal
+  hosts: localhost
+  become: false
+
+  tasks:
+    - name: test if the webserver service is no longer providing an answer by a status code of -1 
+      ansible.builtin.uri:
+        url: http://myserverb
+        status_code: -1

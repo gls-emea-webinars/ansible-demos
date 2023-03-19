@@ -11,18 +11,18 @@
 
   tasks:
     - name: Stop HAProxy service
-      service:
+      ansible.builtin.service:
         name: "{{ pkgservice }}"
         state: stopped
 
     - name: Reset firewall
-      firewalld:
+      ansible.posix.firewalld:
         service: "{{ pkgfirewall }}"
         state: disabled
         permanent: true
         immediate: true
 
     - name: De-install HAProxy from loadbalancer 
-      yum:
+      ansible.builtin.yum:
         name: "{{ pkgname }}"
         state: absent

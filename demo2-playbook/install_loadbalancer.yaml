@@ -1,5 +1,5 @@
 ---
-- name: Install HAProxy on load balancer
+- name: Install load balancer
   hosts: loadbalancers
 
   vars:
@@ -10,27 +10,27 @@
     pkgconfigloc: /etc/haproxy/
 
   tasks:
-    - name: Install HAProxy from loadbalancer 
-      yum:
+    - name: HAProxy installed on loadbalancer vm 
+      ansible.builtin.yum:
         name: "{{ pkgname }}"
         state: latest
 
-    - name: Configure HAProxy
-      template:
+    - name: HAProxy Configured 
+      ansible.builtin.template:
         src: haproxy.cfg
         dest: "{{ pkgconfigloc }}{{ pkgconfig }}"
         owner: haproxy
         group: haproxy
         mode: 0644
 
-    - name: Enable and Start HAProxy service
-      service:
+    - name: HAProxy service Enabled and Started 
+      ansible.builtin.service:
         name: "{{ pkgservice }}"
         state: started
         enabled: true
 
-    - name: Configure firewall
-      firewalld:
+    - name: Firewalld Configured 
+      ansible.posix.firewalld:
         service: "{{ pkgfirewall }}"
         state: enabled
         permanent: true

@@ -1,0 +1,7 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+192.168.122.188 myservera.lenny.local myservera webservera
+192.168.122.189 myserverb.lenny.local myserverb webserverb
+192.168.122.191 bvmservere.lenny.local bvmservere
+192.168.122.192 bvmserverf.lenny.local bvmserverf

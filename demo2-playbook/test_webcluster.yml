@@ -1,0 +1,29 @@
+---
+- name: Test web cluster with load balancer and webservers
+  hosts: localhost
+  become: false
+
+  tasks:
+    - name: Test access via load balancer
+      ansible.builtin.uri:
+        url: http://myserverc.lenny.local
+        return_content: true
+        status_code:
+          - 200
+      ignore_errors: true
+
+    - name: Test webservera
+      ansible.builtin.uri:
+        url: http://myservera.lenny.local
+        return_content: true
+        status_code:
+          - 200
+      ignore_errors: true
+
+    - name: Test webserverb
+      ansible.builtin.uri:
+        url: http://myserverb.lenny.local
+        return_content: true
+        status_code:
+          - 200
+      ignore_errors: true
